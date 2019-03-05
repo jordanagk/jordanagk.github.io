@@ -10,42 +10,28 @@
     <body>
         <div class="container">
 
-            <!-- <button onclick="myFunction()">Try it</button>
-        <div id="myDIV">This is my DIV element.</div>
-        
-        <script>
-        function myFunction() {
-            var x = document.getElementById("myDIV");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-                }
-        }
-        </script>
-        -->
-
-            <div class="title_page" id="page1">
+            <div class="content_container white" id="page1">
                 <div class="title">
                     <h1>YOUR PERSONALIZED SKINCARE ROUTINE</h1>
                     <p>Choose your skin type below.</p>
                 </div>
 
+                <div class="flex-box">
+                    <div class="button" id="button_normal">
+                        <p>NORMAL</p>
+                    </div>
 
-                <div id="button_normal">
-                    <p>NORMAL</p>
-                </div>
+                    <div class="button" id="button_dry">
+                        <p>DRY</p>
+                    </div>
 
-                <div id="button_dry">
-                    <p>DRY</p>
-                </div>
+                    <div class="button" id="button_oily">
+                        <p>OILY</p>
+                    </div>
 
-                <div id="button_oily">
-                    <p>OILY</p>
-                </div>
-
-                <div id="button_combo">
-                    <p>COMBO</p>
+                    <div class="button" id="button_combo">
+                        <p>COMBO</p>
+                    </div>
                 </div>
 
             </div>
@@ -53,8 +39,8 @@
 
             <div class="content">
 
-                <div class="content_normal relative" id="page2">
-                    <div class="text_normal">
+                <div class="content_container light-blue relative" id="page2">
+                    <div class="text">
                         <h2>Normal Skin</h2>
                         <p>One would consider their skin type to be normal if they are able to describe it as neither oily nor dry. If there is ever a presence of oiliness or dryness, it is often rare and easy to resolve. Pores tend to be not easily visible and skin exhibits few lines and wrinkles. A normal skin type has a smooth and even skin tone with no marks or blemishes.
                         </p>
@@ -62,27 +48,28 @@
 
                     </div>
 
-                    <div id="normal_1">
-                        <img src="Assets/step1_normal.png">
+
+                    <div class="skincare-box flex-box relative">
+                        <div id="normal_1">
+                            <img src="Assets/step1_normal.png">
+                            <div class="round-button" id="button1_normal"></div>
+                        </div>
+
+                        <div id="normal_2">
+                            <img src="Assets/step2_normal.png">
+                            <div class="round-button" id="button2_normal"></div>
+                        </div>
+
+                        <div id="normal_3">
+                            <img src="Assets/step3_normal.png">
+                            <div class="round-button" id="button3_normal"></div>
+                        </div>
                     </div>
-
-                    <div id="normal_2">
-                        <img src="Assets/step2_normal.png">
-                    </div>
-
-                    <div id="normal_3">
-                        <img src="Assets/step3_normal.png">
-                    </div>
-
-
-                    <div id="button1_normal"></div>
-                    <div id="button2_normal"></div>
-                    <div id="button3_normal"></div>
-                    <div id="normal_done">DONE</div>
+                    <div class="done-button" id="normal_done">DONE</div>
 
                     <!-- MODAL CONTENT NORMAL -->
                     <div class="modal-content" id="modal-content_step1_normal">
-                        
+                        <img src="Assets/popup_step1_normal.png">
                         <div class="no-flex">
                             <span class="close" id="modal-content_step1_normal_close">&times;</span>
 
@@ -93,7 +80,7 @@
                                 <a href="https://www.sephora.com/product/soy-face-cleanser-P7880?skuId=487694&icid2=skin_in_the_game_lp_desktop_normal_cleanse_other_carousel_us:p7880" target="_blank">SHOP FOR PRODUCT</a>
                             </div>
                         </div>
-                        <img src="Assets/popup_step1_normal.png">
+                        
 
                     </div>
                     <div class="modal-content" id="modal-content_step2_normal">
@@ -268,26 +255,30 @@
 
                 </div>
 
-                <div class="content_combo relative" id="page5">
-                    <div class="text_combo">
+                <div class="content_container light-blue relative" id="page5">
+                    <div class="text">
                         <h2>Combination Skin</h2>
                         <p>One would consider their skin type to be combination if their skin features two or more different skin types on their face. Many often mistake combination skin to be oily as it can be hard to identify and treat. Excess shine generally occurs in the T-zone, which includes the forehead, nose, and chin. A skin routine must be able to exfoliate without irritation.
                         </p>
                         <h4>Click the buttons below to explore the products.</h4>
                     </div>
-                    <div id="combo_1">
-                        <img src="Assets/step1_combo.png">
-                    </div>
-                    <div id="combo_2">
-                        <img src="Assets/step2_combo.png">
-                    </div>
-                    <div id="combo_3">
-                        <img src="Assets/step3_combo.png">
-                    </div>
+                    
+                    <div class="skincare-box flex-box relative">
+                        <div id="combo_1">
+                            <img src="Assets/step1_combo.png">
+                            <div class="round-button" id="button1_combo"></div>
+                        </div>
 
-                    <div id="button1_combo"></div>
-                    <div id="button2_combo"></div>
-                    <div id="button3_combo"></div>
+                        <div id="combo_2">
+                            <img src="Assets/step2_combo.png">
+                            <div class="round-button" id="button2_combo"></div>
+                        </div>
+
+                        <div id="combo_3">
+                            <img src="Assets/step3_combo.png">
+                            <div class="round-button" id="button3_combo"></div>
+                        </div>
+                    </div>
                     <div id="combo_done">DONE</div>
 
                     <!-- MODAL CONTENT COMBO -->
@@ -343,7 +334,7 @@
                 <div class="message">
                     <p>You have completed all of the steps in your personalized skincare routine.</p>
                 </div>
-                <div id="button2_new">Try A New Skin Type</div>
+                <div class="button" id="button2_new">Try A New Skin Type</div>
 
 
             </div>
