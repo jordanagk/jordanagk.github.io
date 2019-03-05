@@ -12,7 +12,7 @@
             margin: 50px 0px;
             background-color: rgba(0, 0, 0, .05);
             font-family: adelle-sans, sans-serif;
-            
+
         }
 
         .container {
@@ -28,6 +28,7 @@
             display: flex;
             align-items: baseline;
             justify-content: space-between;
+            margin-bottom: 400px;
         }
 
         .header h1 {
@@ -35,19 +36,32 @@
             font-style: normal;
         }
 
-        .header h5 {
+        .header h5,
+        .sub-section h5 {
             text-transform: uppercase;
             color: lightgray;
-            font-weight:400;
+            font-weight: 400;
+        }
+
+        .sub-section h5 {
+            margin-bottom: -10px;
         }
         
+        .sub-section {
+            margin-left:50px;
+        }
+
         a {
-            color:#41d6c3;
+            color: #41d6c3;
             text-decoration: none;
         }
-        
+
         a:visited {
-            color:#008571;
+            color: #008571;
+        }
+
+        a:hover {
+            color: darkblue;
         }
 
     </style>
@@ -61,11 +75,6 @@
             <h5>Spring 2019</h5>
         </div>
 
-
-
-        <iframe src="https://giphy.com/embed/IgOEWPOgK6uVa" width="480" height="245" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        <p><a href="https://giphy.com/gifs/life-up-IgOEWPOgK6uVa">via GIPHY</a></p>
-
         <div class="project">
             <h3>Project 1: Letterforms</h3>
             <ul>
@@ -76,13 +85,25 @@
                 <li><a href="project-1/boxes-flex.html">Boxes &amp; Flex Demo Code</a></li>
             </ul>
         </div>
+        <div class="project">
+            <h3>Project 2: Game/Learning Tool</h3>
+            <div class="sub-section">
+                <h5>Examples</h5>
+                <ul>
+                    <li><a href="project2/examples/skincare/Index.html">Skincare</a></li>
+                    <li><a href="project2/examples/space/index.html">Learning about the Stars</a></li>
+                    <li><a href="project2/examples/presidents/index.html">Learn about the Presidents</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="resource">
             <h3>Resources</h3>
             <ul>
                 <li><a href="resources/starter_template.html">HTML Starter Template</a></li>
             </ul>
-
         </div>
+
+
     </div>
 
 </body>
