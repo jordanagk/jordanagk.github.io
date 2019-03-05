@@ -8,12 +8,6 @@
     padding-top: 200px;
     padding-bottom: 100px;
     font-family: 'Source Sans Pro', sans-serif;
-    /*background-image: url(download.jpeg);
-    height: 100%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     margin: 0 auto;
     
 }
@@ -55,30 +49,12 @@
 }
 */
 
-
-#button_normal {
+.button {
+    margin-top:60px;
+    margin-right:10px;
     background-color: #d4e9f8;
     height:50px;
     width: 110px;
-    margin-top: 60px;
-    margin-left: 0px;
-    color: black;
-    text-align: center;
-    line-height: 50px;
-    font-weight:600;
-    font-size: 12pt;
-    letter-spacing: 2px;
-    border:1px solid black;
-
-}
-
-
-#button_dry {
-    background-color: #d4e9f8;
-    height:50px;
-    width: 110px;
-    margin-top: -52px;
-    margin-left: 125px;
     color: black;
     text-align: center;
     line-height: 50px;
@@ -88,52 +64,16 @@
     border:1px solid black;
 }
 
-#button_oily {
-    background-color: #d4e9f8;
-    height:50px;
-    width: 110px;
-    margin-top: -52px;
-    margin-left: 250px;
-    color: black;
-    text-align: center;
-    line-height: 50px;
-    font-weight:600;
-    font-size: 12px;
-    letter-spacing: 2px;
-    border:1px solid black;
+.flex-box {
+    display:flex;
+    
 }
 
-#button_combo {
-    background-color: #d4e9f8;
-    height:50px;
-    width: 110px;
-    margin-top: -52px;
-    margin-left: 375px;
-    color: black;
-    text-align: center;
-    line-height: 50px;
-    font-weight:600;
-    font-size: 12px;
-    letter-spacing: 2px;
-    border:1px solid black;
+.button:hover { 
+    background-color:black;
+    color:white;
 }
 
-#button_normal:hover { 
-    background-color:black;
-    color:white;
-}
-#button_dry:hover { 
-    background-color:black;
-    color:white;
-}
-#button_oily:hover { 
-    background-color:black;
-    color:white;
-}
-#button_combo:hover { 
-    background-color:black;
-    color:white;
-}
 
 /* NORMAL SKIN CONTENT AND ASSETS */
 .content_normal {
