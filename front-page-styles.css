@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 50px 0px;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: adelle-sans, sans-serif;
+
+}
+
+.container {
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 5%;
+    border-radius: 2.5%;
+}
+
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 400px;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header h5,
+.sub-section h5 {
+    text-transform: uppercase;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.sub-section h5 {
+    margin-bottom: -10px;
+}
+
+.sub-section {
+    margin-left: 50px;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #008571;
+}
+
+a:hover {
+    color: #8181eb;
+}
+
+
