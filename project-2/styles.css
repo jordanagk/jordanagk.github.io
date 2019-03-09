@@ -1,0 +1,27 @@
+a {
+    background-color:yellow;
+    color:black;
+    padding:40px;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    background-color:black;
+    color:aquamarine;
+    text-decoration: underline;
+}
+
+.button-2 a {
+    background-color:pink;
+    width:400px;
+    font-family: cursive;
+}
+
+.visible {
+    
+}
+
