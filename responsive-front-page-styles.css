@@ -1,9 +1,9 @@
-/* No responsive units being used in this style sheet. The responsive unit version of this style sheet is the responsive-front-page-styles.css */
+/* This is the responsive unit version of the front-page-styles.css*/
 
 
 body {
     padding: 0;
-    margin: 50px 0px;
+    margin: 3.125em 0px;
     background-color: rgba(0, 0, 0, 0.05);
     font-family: 'Merriweather', serif;
 
@@ -15,23 +15,24 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
     padding: 5%;
-    border-radius: 16px;
+    border-radius: 1em;
 }
 
 .header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 12.5em;
 }
 
 .header h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 34px;
+    font-size: 2.125em;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    /*  5px = .3125em  */
+    letter-spacing: .3125em; 
 }
 
 
@@ -41,12 +42,13 @@ body {
     text-transform: uppercase;
     color: gray;
     font-weight: 400;
-    letter-spacing: 2.5px;
+    /*  2.5/16 = .15625em  */
+    letter-spacing: .15625em;
 }
 
 .section,
 .sub-section {
-    margin-left: 50px;
+    margin-left: 3.125em;
 }
 
 
@@ -75,18 +77,21 @@ a:hover {
 .project a,
 .resource a {
     display: block;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1.25em;
+    border-radius: .5em;
     text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
-    width: 230px;
-    border: 1px solid;
+    /*  20/16 = 1.25em  */
+    margin-bottom: 1.25em;
+    box-shadow: 0 .25em .5em 0 rgb(0, 0, 0, 0.2);
+    /*  230/16 = 14.375em */
+    width: 14.375em;
+    /*  1/16 = .0625em  */
+    border: .0625em solid;
 }
 
 .sub-section a {
-    width: 230px;
-    line-height: 28px;
+    width: 14.375em;
+    line-height: 1.75em;
 }
 
 .section a {
@@ -129,7 +134,7 @@ a:hover {
 }
 
 .sub-section.examples {
-    margin-right: 75px;
+    margin-right: 4.6875em;
 }
 
 .sub-section.demos {
@@ -139,30 +144,33 @@ a:hover {
 /*************** Project Styles **************/
 .project,
 .resource {
-    margin-bottom: 75px;
-    border-radius: 8px;
-    padding-bottom: 100px;
+    /*  75/16 = 4.6875em  */
+    margin-bottom: 4.6875em;
+    border-radius: .5em;
+    /*  100/16 = 6.25em  */
+    padding-bottom: 6.25em;
 }
 
 .project h3 {
     font-weight: 100;
     font-family: 'Merriweather', serif;
-    margin-left: 30px;
-    padding-top: 30px;
+    /*  30/16 = 1.875em  */
+    margin-left: 1.875em;
+    padding-top: 1.875em;
 }
 
 .project-number,
 .resource h3 {
-    font-size: 12px;
+    font-size: .75em;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: .15625em;
     font-family: 'Oswald', sans-serif;
 }
 
 .resource h3 {
-    margin-left: 30px;
-    padding-top: 30px;
+    margin-left: 1.875em;
+    padding-top: 1.875em;
 }
 
 .project.ptwo {
@@ -177,7 +185,8 @@ a:hover {
 
 .project.pone h3,
 .resource h3 {
-    margin-bottom: 64px;
+    /*  64/16 = 4em  */
+    margin-bottom: 4em;
 }
 
 .resource {
@@ -195,11 +204,11 @@ a:hover {
     }
 
     .sub-section {
-        margin-bottom: 27px;
+        margin-bottom: 1.67em;
     }
 
     .sub-section.demos {
-        margin-left: 50px;
+        margin-left: 3.175em;
     }
 
 }
