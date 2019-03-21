@@ -1,3 +1,8 @@
+body {
+    font-family: 'League Spartan';
+    color:peachpuff;
+}
+
 .container {
     width: 768px;
     margin: 0 auto;
@@ -37,13 +42,12 @@ a:hover {
 
 @font-face {
     font-family: 'League Spartan';
-    src: url('leaguespartan-bold.eot');
-    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+    src: url('font/leaguespartan-bold.eot');
+    src: url('font/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
         url('font/leaguespartan-bold.woff2') format('woff2'),
-        url('leaguespartan-bold.woff') format('woff'),
-        url('leaguespartan-bold.ttf') format('truetype'),
-        url('leaguespartan-bold.svg#league_spartanbold') format('svg');
+        url('font/leaguespartan-bold.woff') format('woff'),
+        url('font/leaguespartan-bold.ttf') format('truetype'),
+        url('font/leaguespartan-bold.svg#league_spartanbold') format('svg');
     font-weight: bold;
     font-style: normal;
-
 }
