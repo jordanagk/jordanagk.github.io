@@ -1,5 +1,5 @@
 .container {
-    width:768px;
+    width: 768px;
     margin: 0 auto;
     text-align: center;
 }
@@ -11,12 +11,10 @@ a {
     padding: 20px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 20px;
     background-image: url(assets/venus-300x240.jpg);
     background-size: cover;
     background-position: center center;
-    opacity: 1;
-    color:yellow;
+    color: yellow;
     font-family: monospace;
 }
 
@@ -28,4 +26,24 @@ a:hover {
     background-image: url(assets/venus-300x240.jpg);
     color: #fff;
     font-family: cursive;
+}
+
+.paint {
+    font-family: 'League Spartan';
+    font-size: 300px;
+    color: peru;
+}
+
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('leaguespartan-bold.eot');
+    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+        url('font/leaguespartan-bold.woff2') format('woff2'),
+        url('leaguespartan-bold.woff') format('woff'),
+        url('leaguespartan-bold.ttf') format('truetype'),
+        url('leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
 }
