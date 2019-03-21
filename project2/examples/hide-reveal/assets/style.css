@@ -106,8 +106,8 @@ a {
     width: 60%;
 /*     Could be more or less, depending on screen size */
     position: absolute;
-    left: 100px;
-    top: 100px;
+    left: 16%;
+    top: 16%;
     visibility: hidden;
     z-index: 200;
     display: flex;
