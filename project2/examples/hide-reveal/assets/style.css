@@ -79,7 +79,7 @@ a {
 /************************ POP UP WINDOW *****************/
 
 /* The Modal (background) */
-.modal {
+.pineapple {
     /* Visibility Hidden */
     visibility: hidden;
     /* Stay in place */
@@ -106,8 +106,8 @@ a {
     width: 60%;
 /*     Could be more or less, depending on screen size */
     position: absolute;
-    left: 16%;
-    top: 16%;
+    left: 100px;
+    top: 100px;
     visibility: hidden;
     z-index: 200;
     display: flex;
@@ -117,6 +117,10 @@ a {
 
 .no-flex {
     margin-left: 20px;
+}
+
+.no-flex a {
+    display: inline;
 }
 
 .modal-content h1 {

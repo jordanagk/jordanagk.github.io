@@ -6,14 +6,14 @@ $(document).ready(function (){
     $('#kaline-button').click(function() {
         //ID or Class name of the modal you want to appear on click goes into this second area.
         $("#kaline-modal").toggleClass("visible");
-        $(".modal").toggleClass("visible");
+        $(".pineapple").toggleClass("visible");
         });
 });
 
 $(document).ready(function (){
     $('#kaline-close').click(function() {
         $("#kaline-modal").toggleClass("visible")
-        $(".modal").toggleClass("visible");
+        $(".pineapple").toggleClass("visible");
         });
 });
 
@@ -26,14 +26,14 @@ $(document).ready(function (){
     $('#trammell-button').click(function() {
         //ID or Class name of the modal you want to appear on click goes into this second area.
         $("#trammell-modal").toggleClass("visible");
-        $(".modal").toggleClass("visible");
+        $(".pineapple").toggleClass("visible");
         });
 });
 
 $(document).ready(function (){
     $('#trammell-close').click(function() {
         $("#trammell-modal").toggleClass("visible")
-        $(".modal").toggleClass("visible");
+        $(".pineapple").toggleClass("visible");
         });
 });
 
@@ -46,14 +46,14 @@ $(document).ready(function (){
     $('#inge-button').click(function() {
         //ID or Class name of the modal you want to appear on click goes into this second area.
         $("#inge-modal").toggleClass("visible");
-        $(".modal").toggleClass("visible");
+        $(".pineapple").toggleClass("visible");
         });
 });
 
 $(document).ready(function (){
     $('#inge-close').click(function() {
         $("#inge-modal").toggleClass("visible")
-        $(".modal").toggleClass("visible");
+        $(".pineapple").toggleClass("visible");
         });
 });
 

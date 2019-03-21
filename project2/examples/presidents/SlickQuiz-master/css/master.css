@@ -111,6 +111,12 @@ ol.questions li {
 ul.answers {
     margin-left: 20px;
     margin-bottom: 20px;
+    color:red;
+}
+
+input {
+    background-color:red;
+    box-shadow: 5px 10px #888888;
 }
 
 ul.responses li {

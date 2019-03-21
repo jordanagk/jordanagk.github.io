@@ -1,27 +1,31 @@
+.container {
+    width:768px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 a {
-    background-color:yellow;
-    color:black;
-    padding:40px;
     text-decoration: none;
     display: block;
-    width: 200px;
+    width: 100px;
+    padding: 20px;
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 20px;
+    background-image: url(assets/venus-300x240.jpg);
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+    color:yellow;
+    font-family: monospace;
 }
 
 a:hover {
-    background-color:black;
-    color:aquamarine;
-    text-decoration: underline;
+    opacity: 0.5;
 }
 
-.button-2 a {
-    background-color:pink;
-    width:400px;
+.loop {
+    background-image: url(assets/venus-300x240.jpg);
+    color: #fff;
     font-family: cursive;
 }
-
-.visible {
-    
-}
-
