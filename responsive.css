@@ -165,6 +165,12 @@ a {
 /*    margin-top: 4.25rem;*/
 }
 
+.project.pone {
+    background-color: rgba(121, 165, 43, 0.1);
+    color: rgb(83, 112, 29);
+/*    margin-top: 4.25rem;*/
+}
+
 .resource {
     background-color: rgba(107, 46, 93, 0.1);
     color: #6b2e5d;
