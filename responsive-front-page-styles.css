@@ -183,6 +183,11 @@ a:hover {
     color: rgb(83, 112, 29);
 }
 
+.project .pthree {
+    background-color:rgba(189, 64, 40, 0.1);
+    color:#BD4028;
+}
+
 .project.pone h3,
 .resource h3 {
     /*  64/16 = 4em  */

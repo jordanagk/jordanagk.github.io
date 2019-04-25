@@ -111,6 +111,16 @@ a {
     color: white;
 }
 
+.project.pthree .sub-section a {
+    border-color: #BD4028;
+    color: #BD4028;
+}
+
+.project.pthree .sub-section a:hover {
+    background-color: #BD4028;
+    color: white;
+}
+
 .resource a {
     border-color: #6b2e5d;
     color: #6b2e5d;
@@ -120,6 +130,8 @@ a {
     background-color: #6b2e5d;
     color: white;
 }
+
+
 
 /*************** Project Styles **************/
 .project,
@@ -165,11 +177,12 @@ a {
 /*    margin-top: 4.25rem;*/
 }
 
-.project.pone {
-    background-color: rgba(121, 165, 43, 0.1);
-    color: rgb(83, 112, 29);
-/*    margin-top: 4.25rem;*/
+.project.pthree {
+    background-color:rgba(189, 64, 40, 0.1);
+    color:#BD4028;
 }
+
+
 
 .resource {
     background-color: rgba(107, 46, 93, 0.1);
@@ -214,6 +227,7 @@ a {
         margin-left: 4.15625em;
         margin-bottom: 0;
     }
+    
 
     .sub-section.demos h5 {
         margin-top: 0;
