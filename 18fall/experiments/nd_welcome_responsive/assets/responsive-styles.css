@@ -54,7 +54,7 @@ nav {
 }
 
 .topnav a {
-    float: left;
+    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -130,7 +130,7 @@ figure {
 }
 
 figure img {
-    width: 50%;
+    width: 100%;
     margin-bottom: .5rem;
 }
 
@@ -320,7 +320,7 @@ footer dd {
         margin-left: auto;
         margin-right: auto;
         padding: 5%;
-        background-color: green;
+        background-color: #fff;
     }
 
     .spacing {

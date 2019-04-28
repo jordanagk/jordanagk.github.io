@@ -45,9 +45,24 @@ header h1 {
         /*    height:3em;*/
         width: 33%;
     }
+    
 
     .project-container {
         flex-direction: row;
+    }
+    
+    .pink {
+        background-color: #ffc0cb50;
+        width: 100%;
+    }
+    
+    section .pink img {
+        width:90%;
+        text-align: center;
+    }
+    
+    section .pink h2 {
+        text-align: center;
     }
 
 
