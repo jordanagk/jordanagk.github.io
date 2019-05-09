@@ -27,12 +27,21 @@ body {
 }
 */
 
-.header h1 {
+.header h1,
+.header h5,
+.sub-section h5 {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
+}
+
+
+
+
+
+.header h1 {
+    font-size: 1.5em;
+    font-weight: 700;
     /*  5px = .3125em  */
     /*    letter-spacing: .3125em; */
     letter-spacing: .15625em;
@@ -40,8 +49,6 @@ body {
 
 .header h5,
 .sub-section h5 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
     color: gray;
     font-weight: 400;
     /*  2.5/16 = .15625em  */
@@ -252,3 +259,4 @@ a {
     }
 
 }
+

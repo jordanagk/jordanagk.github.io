@@ -69,6 +69,7 @@ section {
 
 .rollover-item:hover .description {
     top: 0;
+    color:yellow;
 }
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%% helper classes %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -88,6 +89,12 @@ section {
 
 /* transitions */
 
+/*
 .top-trans {
     transition: top 0.5s ease;
+}
+*/
+
+.color-trans {
+    transition: color 1s ease;
 }
