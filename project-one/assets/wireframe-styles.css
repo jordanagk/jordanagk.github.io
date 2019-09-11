@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color:#000000;
+}
+
+.container {
+  width: 485px;
+  background-color: #DBDBDB;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.large-letter-group {
+  height:472px;
+  width:100%;
+  background-color:#349338;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+}
+
+.large-letter-group h1 {
+  height:449px;
+  width:349px;
+  background-color:#DB0101;
+  padding:0;
+  margin: 0;
+}
+
+.large-letter-group button {
+  width:66px;
+  height:66px;
+  background-color:#FD5BFD;
+  margin-right:10px;
+}
+
+footer {
+  display:flex;
+}
+
+footer .sources-section {
+  width:208px;
+}
+
+footer img {
+  height:94px;
+  width:94px;
+}
