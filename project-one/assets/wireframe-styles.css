@@ -1,50 +1,72 @@
 body {
-  padding: 0;
-  margin: 0;
+  padding:0;
+  margin:0;
   background-color:#000000;
 }
 
 .container {
-  width: 485px;
+  width:485px;
   background-color: #DBDBDB;
   margin-left:auto;
-  margin-right:auto;
+  margin-right: auto;
 }
 
 .large-letter-group {
-  height:472px;
-  width:100%;
-  background-color:#349338;
-  display: flex;
+  display:flex;
+  justify-content:center;
   align-items: flex-end;
-  justify-content: space-around;
-
+  background-color:#349338;
 }
 
 .large-letter-group h1 {
+  background-color:#DB0101;
   height:449px;
   width:349px;
-  background-color:#DB0101;
-  padding:0;
-  margin: 0;
+  margin-bottom:0;
 }
 
 .large-letter-group button {
-  width:66px;
   height:66px;
+  width:66px;
   background-color:#FD5BFD;
-  margin-right:10px;
+  margin-left:10px;
+}
+
+.letter-set {
+  background-color:#F9FF60;
+  height:54px;
+}
+
+.main-copy {
+  background-color: #55F2FF;
 }
 
 footer {
   display:flex;
 }
 
-footer .sources-section {
-  width:208px;
+.letter-set,
+.main-copy,
+footer {
+  margin-top:40px;
 }
 
 footer img {
-  height:94px;
-  width:94px;
+  height:95px;
+  width:95px;
+  background-color:#586CFF;
+  margin-right:12px;
+}
+
+footer .author-heading {
+  width:93px;
+  height:24px;
+  background-color:#FFC031;
+  margin-right:77px;
+}
+
+footer .sources-section {
+  width:208px;
+  background-color:#55FF96;
+  word-wrap:break-word;
 }
