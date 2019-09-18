@@ -1,0 +1,20 @@
+#green-froggie {
+  position: absolute;
+    top: 30.75%;
+    left: 12.755%;
+}
+
+#pro-one {
+  position:relative;
+}
+
+#red-froggie {
+  position:static;
+}
+
+#gold-froggie {
+  position: fixed;
+  right:0;
+  left:unset;
+  z-index:99;
+}
