@@ -6,56 +6,52 @@ body {
     color: #fff;
 }
 
+.visible {
+    visibility: visible!important;
+}
+
+
 .container {
-    width: 768px;
-    height: 1024px;
+    width: 491px;
     margin: 0 auto;
     position: relative;
-    overflow-y: hidden;
 }
 
-
-.box {
-    margin-left: auto;
-    margin-right: auto;
-    width: 491px;
-}
-
-.header {
+header {
     background-color: #000;
     height: 60px;
-    /*    width:100%;*/
-}
-
-.cycle-slideshow {}
-
-.analysis {
-    position: absolute;
-    z-index: 20;
-    top: 42px;
-    left: 148px;
-}
+  }
 
 /******************************* ******** Letter & Button **********/
 .letter-container {
     width: 491px;
     display: flex;
     align-items: baseline;
+    position: relative;
 }
 
-.large-letter {
+.letter-container h1 {
     font-weight: 900;
     font-size: 449px;
     margin-left: 31.28px;
     margin-right: 13.55px;
     margin-top: -60px;
+    margin-bottom:0px;
+}
+
+.letter-container img {
+  visibility: hidden;
+  position: absolute;
+  z-index: 20;
+  top: 4.375%;
+  left: 2%;
 }
 
 #button {
     width: 66px;
     height: 66px;
     background-color: #fd753f;
-    margin-right: 31.28px;
+    margin-left: 31.28px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -80,7 +76,7 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     clear: both;
-    width: 400px;
+    /* width: 400px; */
 }
 
 
@@ -131,54 +127,62 @@ body {
 }
 
 /******************************* ******** Footer **********/
+footer {
+    font-family: "acumin-pro-condensed";
+    display: flex;
+}
+
 .photo-title {
     width: 300px;
+    display:flex;
 }
 
-.bar-photo {
-    width: 94px;
-    height: 110px;
-    float: left;
-    margin-right: 12px;
-}
-
-.bar {
-    height: 16px;
-    background-color: #000;
-}
-
-.my-photo {
-    width: 94px;
-    height: 94px;
-    background-image: url(instructor-photo.jpg);
-}
-
-.title,
-.sources {
-    font-family: "acumin-pro-condensed";
+.photo-title img {
+  height:94px;
+  width:94px;
 }
 
 .title {
     width: 100px;
-    float: left;
+    margin-left:10px;
+  }
+
+.sources {
+    width: 255px;
+    margin-left: 30px;
 }
 
-.title h3 {
+.title h3,
+.sources h3 {
     font-size: 13.333px;
     font-weight: 700;
     margin-top: 0px;
     margin-bottom: 3px;
     color: #fd753f;
+  }
 
-}
+.sources h3 {
+    font-size: 10.6667px;
+    line-height: 18.6667px;
+    }
 
-.title p {
+.title p,
+.sources p {
     font-size: 13.333px;
     font-weight: 100;
     margin: 0;
 }
 
+.sources p {
+    font-size: 10.6667px;
+    line-height: 18.6667px;
+}
 
+.sources p:first-of-type {
+    margin: 0px 0px 12px 0px;
+}
+
+/* *********************** Links *********************** */
 a {
     text-decoration: none;
     color: #87a7d7;
@@ -192,36 +196,4 @@ a:visited {
 a:hover {
     color: #ff9b73;
     font-weight: 900;
-}
-
-
-
-
-
-
-
-.sources {
-    width: 255px;
-    margin-left: 30px;
-    float: left;
-}
-
-.sources h3 {
-    font-size: 10.6667px;
-    font-weight: 700;
-    line-height: 18.6667px;
-    margin-top: 0px;
-    margin-bottom: 3px;
-    color: #fd753f;
-}
-
-.sources p {
-    font-size: 10.6667px;
-    font-weight: 100;
-    line-height: 18.6667px;
-    margin-top: 0px;
-}
-
-.sources p:first-child {
-    margin-bottom: 12px;
-}
+  }
