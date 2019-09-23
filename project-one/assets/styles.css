@@ -6,8 +6,22 @@ body {
     color: #fff;
 }
 
-.visible {
-    visibility: visible!important;
+.letter-container img {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 20;
+  top: -3.625%;
+  left: 2%;
+
+  /* animation for visibility */
+  transition: visibility 0s linear 300ms, opacity 0s;
+}
+
+.letter-container img.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
 }
 
 
@@ -37,14 +51,6 @@ header {
     margin-right: 13.55px;
     margin-top: -60px;
     margin-bottom:0px;
-}
-
-.letter-container img {
-  visibility: hidden;
-  position: absolute;
-  z-index: 20;
-  top: 4.375%;
-  left: 2%;
 }
 
 #button {
@@ -130,6 +136,7 @@ header {
 footer {
     font-family: "acumin-pro-condensed";
     display: flex;
+    margin-bottom: 25%;
 }
 
 .photo-title {
