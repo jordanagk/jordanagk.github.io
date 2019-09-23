@@ -18,3 +18,9 @@
   left:unset;
   z-index:99;
 }
+
+#rel-lily-pad {
+  position: relative;
+  top: 111%;
+  left: 11.25%;
+}
