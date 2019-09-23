@@ -2,68 +2,99 @@
 <html lang="en">
 
 <head>
-  <title>Jordan Kauffman – VCD 03: Web Design</title>
+  <!--  Beginning of code snippet to tell device to determine the websites dimensions based on viewport size   -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--  end of code snippet  -->
+  <meta charset="utf-8">
+  <title>Fall 2019 Web Design</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i|Oswald:400,700" rel="stylesheet">
+
+  <!--  Main external style sheet used to style this web page  -->
+  <link href="responsive-styles.css" rel="stylesheet" type="text/css" title="responsive">
+
+
+
 </head>
 
-<style>
-  body {
-    font-family: verdana, sans-serif;
-  }
-
-  a {
-    display: block;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #CFF5FC;
-    width: 50%;
-    text-align: center;
-    border-radius: 25px;
-    text-decoration: none;
-    color: #2792A5;
-    font-size: 12px;
-  }
-
-  a:hover {
-    background-color: #2792A5;
-    color: #fff;
-  }
-
-  #exercise-3 a {
-    background-color:#EA3F3F;
-    color:#fff;
-
-  }
-
-  #exercise-3 a:hover {
-    background-color:#791D1D;
-    color:#fff;
-  }
-
-  section {
-    margin-top: 75px;
-    margin-left: 40px;
-  }
-</style>
-
 <body>
+  <div class="container">
+    <header class="flex-box">
+      <h1><span class="vcd-03">VCD 03:</span> Web Design</h1>
+      <p class="sub-header">Fall 2019</p>
+    </header>
 
-  <h1>VCD 03: Web Design</h1>
-  <!-- Project 1 -->
-  <section id="project-one">
-    <h2>Project One: My Favorite Letterform</h2>
-    <a href="project-one/plain-html.html">Plain HTML</a>
-    <a href="project-one/wireframe.html">Color Block Wireframe</a>
-    <a href="project-one/index.html">Final Site</a>
-  </section>
-  <!-- end Project 1 -->
+    <section class="project pone">
+      <div class="spacing-box">
+        <h3><span class="project-number">Project 1:</span> Letterforms</h3>
+        <div class="button-holder">
+          <a href="project-one/plain-html.html">Plain HTML</a>
+          <a href="project-one/wireframe.html">Color Block Wireframe</a>
+          <a href="project-one/index.html">Final Site</a>
+        </div>
+      </div>
+    </section>
+    <!--        end of project 1           -->
 
-  <!-- Exercise 3 -->
-  <section id="exercise-3">
-    <h2>Exercise 3 — Absolute Positioning</h2>
-    <a href="ex3_positioning/ex3_student_file.zip" download>Download Froggie's Code Land</a>
-    <a href="ex3_positioning/froggies-code-land-final.png">Check your work</a>
-  </section>
-  <!-- end Exercise 3 -->
+    <section class="project ptwo">
+      <div class="spacing-box">
+        <h3><span class="project-number">Exercise 3:</span> Positioning</h3>
+        <div class="button-holder">
+          <a href="ex3_student_file/index.html">Froggie's Code Land</a>
+        </div>
+      </div>
+    </section>
+    <!--        end of project 2           -->
+
+
+
+    <!--   Beginning of project 3     -->
+    <!-- <section class="project pthree">
+      <div class="spacing-box">
+        <h3><span class="project-number">Project 3:</span> Portfolios</h3>
+        <div class="flex-box two-column">
+          <div class="sub-section examples">
+            <h5>Examples</h5>
+            <a href="project-3/nav-menus/responsive-menu-top/">Nav Menu Top</a>
+            <a href="project-3/nav-menus/animated-hamburger-left/">Nav Menu Animated Left</a>
+            <a href="project-3/nav-menus/animated-hamburger-right/">Nav Menu Animated Right</a>
+            <a href="project-3/color-overlay-2/index.html">Color Overlay and Text on hover</a>
+          </div>
+          <div class="sub-section demos">
+            <h5>Wireframe Demos</h5>
+            <a href="project-3/height-width-wireframe/no-images-wireframe.html">Wireframe without Images</a>
+            <a href="project-3/height-width-wireframe/index.html">Wireframe <em>with</em> Images</a>
+            <a href="project-3/hw-wireframe-demo.zip" download>Download Sizing Images – Wireframe Code</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--        end of project 3-->
+    <!-- <section class="resource">
+      <div class="spacing-box">
+        <h3 class="project-number">Resources</h3>
+        <div class="section">
+          <a href="resources/starter_template.html" download>HTML Starter Template</a>
+
+          <a href="resources/popup-template.js" download>Popup Template Code</a>
+
+          <a href="responsive-web-design.zip" download>Exercise 1 Demo Code</a>
+          <a href="project-3/nav-menus/nav-menus.zip" download>Download Nav Menu Code</a>
+        </div>
+      </div>
+    </section> -->
+    <!-- end of Resource section -->
+    <footer>
+      <p>This is the website for <span class="high-light">VCD 03: Web Design at the University of Notre Dame</span>. The site was designed and is maintained by <span class="high-light">Assistant Visiting Teaching Professor Jordan AG Kauffman</span>.
+      </p>
+      <p>&copy; 2019 <span class="high-light">Jordan AG Kauffman</span>. All rights reserved.</p>
+    </footer>
+
+
+
+  </div>
+
+
 
 </body>
 
