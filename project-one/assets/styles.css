@@ -10,10 +10,9 @@ body {
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  z-index: 20;
+  z-index: 99;
   top: -3.625%;
   left: 2%;
-
   /* animation for visibility */
   transition: visibility 0s linear 300ms, opacity 0s;
 }
