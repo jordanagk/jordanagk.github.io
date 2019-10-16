@@ -1,0 +1,31 @@
+.box {
+  width:80%;
+  margin: 0 auto;
+}
+
+img#sizing-image {
+  padding-left:27.5%;
+  height:30em;
+}
+
+.joyride {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.joyride div {
+  height:50px;
+  width:50px;
+  background-color: #68cbc2;
+}
+
+.joyride div:hover {
+  background-color: #e68f50;
+  cursor: pointer;
+}
+
+input#jordan{
+  display:block;
+  margin:40px 0px;
+}
