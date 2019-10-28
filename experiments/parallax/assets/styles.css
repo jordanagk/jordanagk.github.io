@@ -7,6 +7,7 @@ body {
   background-color: rgba(189, 245, 187, .3);
 }
 
+
 div.progress {
   position: fixed;
   top: 0;
@@ -17,6 +18,32 @@ div.progress {
   z-index: 9999999;
    transition: color 0.5s;
 }
+
+.fun-square {
+  height:5em;
+  width:5em;
+  background-color: #faed79;
+  position:relative;
+  z-index: 99999999999999;
+}
+
+.fun-header {
+  height:20em;
+  width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container {
   width: 768px;

@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta content="text/html; charset=utf-8" http-equiv="content-type">
 
-        <title>SlickQuiz Demo</title>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
 
-        <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/master.css" media="screen" rel="stylesheet" type="text/css">
-    </head>
+  <title>SlickQuiz Demo</title>
 
-    <body>
-         <div id="slickQuiz">
-        <h1 class="quizName"><!-- where the quiz name goes --></h1>
+  <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/master.css" media="screen" rel="stylesheet" type="text/css">
+</head>
 
-        <div class="quizArea">
-            <div class="quizHeader">
-                <!-- where the quiz main copy goes -->
+<body>
+  <section id="slickQuiz">
+    <h1 class="quizName">
+      <!-- where the quiz name goes -->
+    </h1>
 
-                <a class="button startQuiz" href="#">Get Started!</a>
-            </div>
+    <div class="quizArea">
+      <div class="quizHeader">
+        <!-- where the quiz main copy goes -->
 
-            <!-- where the quiz gets built -->
-        </div>
+        <a class="button startQuiz" href="#">Get Started!</a>
+      </div>
 
-        <div class="quizResults">
-            <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+      <!-- where the quiz gets built -->
+    </div>
 
-            <h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+    <div class="quizResults">
+      <h3 class="quizScore">You Scored: <span>
+          <!-- where the quiz score goes --></span></h3>
 
-            <div class="quizResultsCopy">
-                <!-- where the quiz result copy goes -->
-            </div>
-             </div>
-        </div>
+      <h3 class="quizLevel"><strong>Ranking:</strong> <span>
+          <!-- where the quiz ranking level goes --></span></h3>
 
-        <script src="js/jquery.js"></script>
-        <script src="js/slickQuiz-config.js"></script>
-        <script src="js/slickQuiz.js"></script>
-        <script src="js/master.js"></script>
-    </body>
+      <div class="quizResultsCopy">
+        <!-- where the quiz result copy goes -->
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery.js"></script>
+  <!-- slickQuiz-config.js is where you will place ALL the questions and control a few other elements. -->
+  <script src="js/slickQuiz-config.js"></script>
+  <script src="js/slickQuiz.js"></script>
+  <script src="js/master.js"></script>
+</body>
+
 </html>

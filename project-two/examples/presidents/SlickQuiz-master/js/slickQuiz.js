@@ -10,6 +10,8 @@
  * @license MIT
  */
 
+ // ********* DON'T MESS WITH THIS FILE ******************* 
+
 (function ($) {
     $.slickQuiz = function (element, options) {
         var plugin = this,

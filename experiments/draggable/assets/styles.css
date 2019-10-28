@@ -7,6 +7,62 @@
   margin: 0 10px 10px 0;
 } */
 
+#reveal-button {
+  height:5em;
+  width:5em;
+  background-color:#00f0ff;
+}
+
+.notre-content {
+  width: 50vw;
+  padding:1vw;
+  background-color: #fff;
+}
+
+.notre-content p {
+  font-family:fantasy;
+  font-size: 2em;
+  color: #382b9d;
+  padding-left:4vw;
+}
+
+.fighting-irish {
+  color:#247e1f;
+  font-weight:900;
+  font-family:monospace;
+  letter-spacing: 5px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.shadow {
+  background-color:red; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #draggable,
 #love,
 #zahar,

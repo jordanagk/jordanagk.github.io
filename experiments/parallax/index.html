@@ -5,13 +5,33 @@
   <meta charset="utf-8">
   <title>Parallax Example</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
+
   <div class="progress"></div>
+  <div class="fun-header"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="container">
     <!-- begin Intro section -->
     <section class="top-of-the-mountain">
+      <div class="fun-square" alt="" data-parallax=".8"></div>
       <section class="white-sec">
         <p>This is an example of parallax scroll effecting individual objects or elements on a website. Be sure to take a look at the bottom of the site for a look at a layered parallax scroll effect.</p>
       </section>
@@ -27,7 +47,7 @@
 
       <!-- Begin Section 2-->
       <section id="sec2" class="rel-green">
-        <img id="pf1" src="assets/purple-froggie.svg" alt="" data-parallax=".5">
+        <img id="pf1" src="assets/purple-froggie.svg" alt="" data-parallax="3">
         <img id="pf2" src="assets/purple-froggie.svg" alt="" data-parallax="0.1">
         <img id="pf3" src="assets/purple-froggie.svg" alt="">
       </section>
@@ -54,14 +74,15 @@
     <section id="sec5" class="cattails">
       <img id="fore" src="assets/froggie-cattails-foreground.svg" alt="" data-parallax="2">
       <img id="mid" src="assets/froggie-cattails-midground.svg" alt="" data-parallax=".1">
-      <img id="back" src="assets/froggie-cattails-background.svg" alt="" data-parallax="0">
+      <img id="back" src="assets/froggie-cattails-background.svg" alt="" data-parallax=".3">
     </section>
     <!-- end Section 5 -->
 
 
   </div>
   <!-- end of .container div -->
-  <script type="text/javascript" src="assets/scroll.js"></script>
+  <!-- <script type="text/javascript" src="assets/scroll.js"></script> -->
+<script src="assets/draggable.js" charset="utf-8"></script>
 </body>
 
 </html>
