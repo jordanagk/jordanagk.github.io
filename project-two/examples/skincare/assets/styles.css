@@ -1,6 +1,6 @@
 * {
     margin: 0px;
-  
+
 }
 
 .container {
@@ -9,13 +9,13 @@
     padding-bottom: 100px;
     font-family: 'Source Sans Pro', sans-serif;
     /*background-image: url(download.jpeg);
-    height: 100%; 
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
     margin: 0 auto;
-    
+
 }
 
 
@@ -27,8 +27,8 @@
     background-color: white;
     padding-left: 200px;
     padding-right: 200px;
-    
-    
+
+
 }
 
 .title h1{
@@ -36,7 +36,7 @@
     font-weight:100;
     width: 200px;
     letter-spacing: 4px
-    
+
 }
 .title p{
     font-size:16pt;
@@ -44,7 +44,7 @@
     margin-top: 50px;
 }
 
- 
+
 /*
 #myDIV {
     width: 100%;
@@ -118,19 +118,19 @@
     border:1px solid black;
 }
 
-#button_normal:hover { 
+#button_normal:hover {
     background-color:black;
     color:white;
 }
-#button_dry:hover { 
+#button_dry:hover {
     background-color:black;
     color:white;
 }
-#button_oily:hover { 
+#button_oily:hover {
     background-color:black;
     color:white;
 }
-#button_combo:hover { 
+#button_combo:hover {
     background-color:black;
     color:white;
 }
@@ -141,12 +141,12 @@
     background-color: #d4e9f8;
     padding-left: 200px;
     padding-right: 200px;
-    
+
 }
 
 .relative{
     position:relative;
-    
+
 }
 
 .text_normal h2{
@@ -163,7 +163,7 @@
     text-align: center;
     line-height: 25px;
     padding-bottom: 5px;
-   
+
 }
 
 .text_normal h4{
@@ -208,7 +208,7 @@
     position:absolute;
     z-index: 100;
 }
-#button2_normal { 
+#button2_normal {
     background-color: #000000;
     border-radius: 50%;
     width: 15px;
@@ -234,7 +234,7 @@
     position:absolute;
     z-index: 100;
 }
-#normal_done { 
+#normal_done {
     background-color: white;
     height:50px;
     width: 160px;
@@ -249,7 +249,7 @@
     border:1px solid black;
 }
 
-#normal_done:hover { 
+#normal_done:hover {
     background-color:black;
     color:white;
 }
@@ -285,7 +285,7 @@
     text-align: center;
     line-height: 25px;
     padding-bottom: 5px;
-   
+
 }
 
 .text_dry h4{
@@ -330,7 +330,7 @@
     position:absolute;
     z-index: 100;
 }
-#button2_dry { 
+#button2_dry {
     background-color: #000000;
     border-radius: 50%;
     width: 15px;
@@ -357,7 +357,7 @@
     z-index: 100;
 
 }
-#dry_done { 
+#dry_done {
     background-color: white;
     height:50px;
     width: 160px;
@@ -371,7 +371,7 @@
     letter-spacing: 2px;
     border:1px solid black;
 }
-#dry_done:hover { 
+#dry_done:hover {
     background-color:black;
     color:white;
 }
@@ -410,7 +410,7 @@
     text-align: center;
     line-height: 25px;
     padding-bottom: 5px;
-   
+
 }
 
 .text_oily h4{
@@ -455,7 +455,7 @@
     position:absolute;
     z-index: 100;
 }
-#button2_oily { 
+#button2_oily {
     background-color: #000000;
     border-radius: 50%;
     width: 15px;
@@ -482,7 +482,7 @@
     z-index: 100;
 }
 
-#oily_done { 
+#oily_done {
     background-color: white;
     height:50px;
     width: 160px;
@@ -497,7 +497,7 @@
     border:1px solid black;
 }
 
-#oily_done:hover { 
+#oily_done:hover {
     background-color:black;
     color:white;
 }
@@ -535,7 +535,7 @@
     text-align: center;
     line-height: 25px;
     padding-bottom: 5px;
-   
+
 }
 
 .text_combo h4{
@@ -583,7 +583,7 @@
     position:absolute;
     z-index: 100;
 }
-#button2_combo { 
+#button2_combo {
     background-color: #000000;
     border-radius: 50%;
     width: 15px;
@@ -609,7 +609,7 @@
     position:absolute;
     z-index: 100;
 }
-#combo_done { 
+#combo_done {
     background-color: white;
     height:50px;
     width: 160px;
@@ -623,7 +623,7 @@
     letter-spacing: 2px;
     border:1px solid black;
 }
-#combo_done:hover { 
+#combo_done:hover {
     background-color:black;
     color:white;
 }
@@ -655,10 +655,10 @@
     text-align: center;
     line-height: 25px;
     padding-top: 50px;
-   
+
 }
 
-#button2_new { 
+#button2_new {
     background-color: #d4e9f8;
     height:50px;
     width: 160px;
@@ -673,7 +673,7 @@
     border:1px solid black;
 }
 
-#button2_new:hover { 
+#button2_new:hover {
     background-color:black;
     color:white;
 }
@@ -721,12 +721,12 @@ a {
     font-size: 12pt;
     margin-top: 20px;
     padding-bottom:5px;
-    border-bottom: 1px solid black;  
+    border-bottom: 1px solid black;
 }
 .modal-content h2 {
     font-weight: 100;
     font-size: 16pt;
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 .modal-content h5 {
     font-weight: 100;
@@ -775,4 +775,3 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-

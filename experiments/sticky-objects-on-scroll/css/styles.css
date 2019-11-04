@@ -1,0 +1,48 @@
+/* This is a CSS file for Sticky Objects on Scroll */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width:1024px;
+  margin: 0 auto;
+}
+
+section {
+  height: 1000px;
+  /* width: 1000px; */
+  background-color:#a295dd;
+  position:relative;
+}
+
+.object {
+  height: 2em;
+  width: 2em;
+  background-color: #42039d;
+  position:absolute;
+  /* top: 20px;
+  left: 20px; */
+}
+
+#spring {
+  background-color:#b1da6d;
+}
+
+#summer {
+  background-color:#6ddad7;
+}
+
+#summer-character {
+  background-color:#208886;
+  border-radius: 25px;
+  position:absolute;
+  right:20%;
+}
+
+#spring-character,
+#summer-character,
+#fall-character,
+#winter-character {
+  position:absolute;
+}

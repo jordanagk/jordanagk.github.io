@@ -58,6 +58,7 @@ document.addEventListener('scroll', function() {
 //   progressTag.style.width = "5px"
 })
 
+// ********************** CHANGE TEXT ONCE WE'VE SCROLLED INTO THE SECTION  *****************************
 // when we scroll the page, see how far down the page we've scrolled and then check for each section, and check to see if we've scrolled passed that threshold. If we have passed the section then update the text in the header.
 
 document.addEventListener("scroll", function() {
