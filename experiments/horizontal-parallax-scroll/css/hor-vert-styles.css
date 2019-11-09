@@ -1,0 +1,49 @@
+/* Styles for horizontal movement on vertical Scroll */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+header.white {
+  color: #fff;
+}
+
+/* Consistent Pieces in Each Section */
+.section {
+  min-height: 100vh;
+  padding: 10px;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+
+/* Section 1 */
+section.s1 {
+  background-color: #c8dee0;
+}
+
+/* Section 2 */
+section.s2 {
+  background-color: #5982a0;
+}
+
+/* Section 3 */
+section.s3 {
+  background-color: #292121;
+}
+
+/* Section 4 */
+section.s4 {
+  background-color: #f3f1f2;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #000;
+}
