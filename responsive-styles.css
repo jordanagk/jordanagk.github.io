@@ -136,12 +136,12 @@ a {
     color: #fff;
 }
 
-.project.pthree .sub-section a {
+.project.pthree .spacing-box .button-holder a  {
     border-color: #BD4028;
     color: #BD4028;
 }
 
-.project.pthree .sub-section a:hover {
+.project.pthree .spacing-box .button-holder a:hover {
     background-color: #BD4028;
     color: #fff;
 }
