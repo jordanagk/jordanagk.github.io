@@ -13,19 +13,21 @@
 
 <body>
   <div class="web-container">
-  <header>
-    <img src="assets/blue-square.png">
-    <div class="name-contact">
-      <h1>Jordan AG Kauffman</h1>
-      <h2>Designer, Researcher, Educator</h2>
-      <a href="mailto:jkauffm1@nd.edu">jkauffm1@nd.edu</a>
-      <a href="https://jordanagk.github.io">jordanagk.github.io</a>
-    </div>
-  </header>
-
-
-
-    <div class="container">
+    <header>
+      <img id="blue-image" src="assets/blue-square.png">
+      <img id="orange-image" src="assets/orange-square.png">
+      <div class="contact-container">
+        <div class="name">
+          <h1>Jordan AG Kauffman</h1>
+          <h2>Designer, Researcher, Educator</h2>
+        </div>
+        <div class="contact">
+          <a href="mailto:jkauffm1@nd.edu">jkauffm1@nd.edu</a>
+          <a href="https://jordanagk.github.io">jordanagk.github.io</a>
+        </div>
+      </div>
+    </header>
+    <main class="container">
       <div id="career-summary">
         <h1>Career Summary</h1>
         <p>A summary of my career up to this point. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
@@ -34,7 +36,7 @@
       <section>
         <div id="left-column">
           <h1>Experience</h1>
-          <div class="job-container">
+          <div class="job-container jc-space">
             <div class="flex">
 
               <div class="title-place">
@@ -48,18 +50,35 @@
             <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
               ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
           </div>
-          <div class="flex">
-            <div class="title-place">
-              <h3>Partner</h3>
-              <h4>LightBox Collective</h4>
+          <div class="job-container jc-space">
+            <div class="flex">
+              <div class="title-place">
+                <h3>Partner</h3>
+                <h4>LightBox Collective</h4>
+              </div>
+              <div class="time-frame">
+                <h5>2017-Present</h5>
+              </div>
             </div>
-            <div class="time-frame">
-              <h5>2017-Present</h5>
-            </div>
+            <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
           </div>
-          <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
+          <div class="job-container">
+            <div class="flex">
+
+              <div class="title-place">
+                <h3>Director of Communication & Marketing</h3>
+                <h4>Habitat for Humanity of Elkhart County</h4>
+              </div>
+              <div class="time-frame">
+                <h5>2013-2015</h5>
+              </div>
+            </div>
+            <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
+          </div>
         </div>
+        <!-- end left column -->
 
         <div id="right-column">
           <h1>Education</h1>
@@ -84,8 +103,10 @@
             Learning
           </p>
         </div>
-    </div>
-    </section>
+        <!-- end right column -->
+      </section>
+    </main>
+
   </div>
 
 

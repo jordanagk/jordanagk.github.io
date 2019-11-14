@@ -86,7 +86,11 @@ hr {
   font-family: 'Open Sans', sans-serif;
 }
 
-@media only screen and (min-width:500px) and (max-width:959px) {}
+@media only screen and (min-width:500px) and (max-width:959px) {
+
+
+
+}
 
 @media only screen and (min-width:960px) {
   header {
@@ -114,8 +118,12 @@ hr {
     display: flex;
   }
 
+  .job-container .flex {
+    justify-content: space-between;
+  }
+
   .time-frame h5 {
-    margin-left: 13.125em;
+    /* margin-left: 13.125em; */
   }
 
   section {
@@ -128,5 +136,10 @@ hr {
 
   #right-column {
     margin-left:20px;
+  }
+
+  .web-container {
+    width: 80%;
+    margin: 0 auto;
   }
 }
