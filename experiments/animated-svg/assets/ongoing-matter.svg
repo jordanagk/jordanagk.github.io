@@ -9,6 +9,13 @@
 			animation-iteration-count: infinite;
 		}
 
+		.biggie {
+			fill: blue;
+			animation-duration: 1s;
+			animation-name: biggie;
+			animation-iteration-count: infinite;
+		}
+
 		@keyframes pulse {
 			from {
 				fill-opacity: 0;
@@ -19,6 +26,15 @@
 				fill-opacity: 1;
 				<!-- transform: scale(1);
 				-->;
+			}
+
+			@keyframes biggie {
+				from {
+					transform: scale(0.1);
+				}
+				to {
+					transform: scale(1);
+				}
 			}
 	</style>
 	<g class="entireWordmark pulse">
@@ -46,7 +62,7 @@
 	110.1,10.9 110.1,32.2 "/>
 
 			<!-- First O -->
-			<path d="M16.3,15.3c0-1-0.6-1.7-1.7-1.7s-1.7,0.7-1.7,1.7v12.5c0,1,0.6,1.7,1.7,1.7s1.7-0.7,1.7-1.7V15.3z M14.6,32.6
+			<path class="biggie" d="M16.3,15.3c0-1-0.6-1.7-1.7-1.7s-1.7,0.7-1.7,1.7v12.5c0,1,0.6,1.7,1.7,1.7s1.7-0.7,1.7-1.7V15.3z M14.6,32.6
 	c-3.1,0-5.1-2.1-5.1-5.1v-12c0-2.9,2-5.1,5.1-5.1s5.1,2.1,5.1,5.1v12C19.7,30.5,17.7,32.6,14.6,32.6"/>
 			<!-- 2nd G Ongoing -->
 			<path
