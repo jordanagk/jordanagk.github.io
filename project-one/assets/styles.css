@@ -1,205 +1,104 @@
+/* Our main stylesheet for Project One */
+/* cmd+/ = CSS note or commenting out */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica", sans-serif;
-    background-color: #000;
-    color: #fff;
+  font-family: acumin-pro, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  /* this is defining the base size for all the type on the page. What ever value is included here it will change all the following font-sizes proportionally. */
 }
 
-.letter-container img {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  z-index: 99;
-  top: -3.625%;
-  left: 2%;
-  /* animation for visibility */
-  transition: visibility 0s linear 300ms, opacity 0s;
+#container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1024px;
+  height: 768px;
 }
 
-.letter-container img.visible {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s linear 0s, opacity 300ms;
+/* TYPOGRAPHY */
+p {
+  /* an em is defined by the parent element that has defined the main value. In this case all elements are inheriting the 18px value from the body tag */
+  font-size: 1em;
+  /* 1em = 18px */
 }
 
-
-.container {
-    width: 491px;
-    margin: 0 auto;
-    position: relative;
+h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 33.333em;
+  /* 600px / 18px = 33.333333em */
+  padding: 0;
+  margin-top: -100px;
+  margin-bottom: -50px;
 }
 
-header {
-    background-color: #000;
-    height: 60px;
-  }
+h2,
+h3 {
+  color: #FC753E;
+  margin: 0;
+  padding: 0;
+}
 
-/******************************* ******** Letter & Button **********/
+h2 {
+  font-size: 2em;
+  /* 36px / 18px = 2em */
+  font-weight: 400;
+}
+
+h3 {
+  /* 24/18 = 1.3333em */
+  font-size: 1.3333em;
+}
+
+.character-highlights {
+  text-transform: uppercase;
+  font-size: 3.3333em;
+  /* 60/18 = 3.3333em */
+}
+
+a {
+  color: #7EA9DD;
+  text-decoration: underline;
+}
+
 .letter-container {
-    width: 491px;
-    display: flex;
-    align-items: baseline;
-    position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  /*horizontal alignments*/
+  align-items: center;
+  /*verticl alignments*/
 }
 
-.letter-container h1 {
-    font-weight: 900;
-    font-size: 449px;
-    margin-left: 31.28px;
-    margin-right: 13.55px;
-    margin-top: -60px;
-    margin-bottom:0px;
-}
-
-#button {
-    width: 66px;
-    height: 66px;
-    background-color: #fd753f;
-    margin-left: 31.28px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-#button:hover {
-    background-color:#87a7d7;
-    cursor:pointer;
-}
-
-/******************************* ******** Sample Set **********/
-.sample-set {
-    font-size: 48px;
-    line-height: 56px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #fff;
-    letter-spacing: 20px;
-    padding-bottom: 10px;
-}
-
-.overflow {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    clear: both;
-    /* width: 400px; */
+.flexybox {
+  display: flex;
 }
 
 
-/******************************* ******** Scrollbar Styling **********/
-::-webkit-scrollbar {
-    width: 7.5px;
-    height: 7.5px;
+.history-writeup {
+  margin-top: 50px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
+.history-writeup p {
+  font-size:20px;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #fd753f;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #ba562e;
-}
-
-
-/******************************* ******** Body **********/
-.body {
-    margin-top: 36px;
-    margin-bottom: 52px;
-    /*    text-decoration: line-through;*/
-
-}
-
-.body h2 {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 100;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 6px;
-    color: #fd753f;
-}
-
-.body p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 100;
-}
-
-/******************************* ******** Footer **********/
 footer {
-    font-family: "acumin-pro-condensed";
-    display: flex;
-    margin-bottom: 25%;
+  margin-top: 150px;
 }
 
-.photo-title {
-    width: 300px;
-    display:flex;
+#my-photo {
+  width: 200px;
+  height: 200px;
+  margin-right:60px;
 }
 
-.photo-title img {
-  height:94px;
-  width:94px;
+.personal-title {
+  /* 29% x 1024px = 300px */
+  width: 300px;
+  margin-right:60px;
 }
-
-.title {
-    width: 100px;
-    margin-left:10px;
-  }
 
 .sources {
-    width: 255px;
-    margin-left: 30px;
+  /* 35% of #container width = 358.2px */
+  width: 358px;
 }
-
-.title h3,
-.sources h3 {
-    font-size: 13.333px;
-    font-weight: 700;
-    margin-top: 0px;
-    margin-bottom: 3px;
-    color: #fd753f;
-  }
-
-.sources h3 {
-    font-size: 10.6667px;
-    line-height: 18.6667px;
-    }
-
-.title p,
-.sources p {
-    font-size: 13.333px;
-    font-weight: 100;
-    margin: 0;
-}
-
-.sources p {
-    font-size: 10.6667px;
-    line-height: 18.6667px;
-}
-
-.sources p:first-of-type {
-    margin: 0px 0px 12px 0px;
-}
-
-/* *********************** Links *********************** */
-a {
-    text-decoration: none;
-    color: #87a7d7;
-    text-transform: uppercase;
-}
-
-a:visited {
-    color: #ff9b73;
-}
-
-a:hover {
-    color: #ff9b73;
-    font-weight: 900;
-  }
