@@ -1,3 +1,6 @@
+/* These are the answers that were used to get the final layout you see in the ex-4-static-layout.png */
+
+
 #green-froggie {
   position: absolute;
     top: 30.75%;
@@ -23,4 +26,24 @@
   position: relative;
   top: 111%;
   left: 11.25%;
+}
+
+.flexbox-frogs-1 {
+  display: flex;
+}
+
+.flexbox-frogs-2 {
+  justify-content: space-between;
+}
+
+#unhappy-green {
+  order: 3;
+}
+
+#happy-red {
+  order:2;
+}
+
+#unhappy-purple {
+  order: 1;
 }
