@@ -2,7 +2,7 @@
 /* cmd+/ = CSS note or commenting out */
 body {
   font-family: acumin-pro, sans-serif;
-  background-color: #000000;
+  background-color: rgb(155, 39, 218);
   color: #ffffff;
   font-size: 18px;
   /* this is defining the base size for all the type on the page. What ever value is included here it will change all the following font-sizes proportionally. */
