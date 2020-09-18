@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(189, 245, 187, .3);
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  width: 768px;
+  margin: 0 auto;
+}
+
+.lineup {
+  margin-bottom: -4px;
+  display: block;
+}
+
+.rel-blue {
+  margin-bottom: -10px;
+}
+
+#pro-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#pro-one p {
+  width: 33.333%;
+}
+
+.rel-green,
+.white-sec,
+.fix-blue {
+  background-color: #BDF5BB;
+  width: 768px;
+  height: 341.33px;
+}
+
+.white-sec {
+  background-color: #fff;
+}
+
+.fix-blue {
+  background-color: #CFF5FC;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+#fix-rec {
+  position: absolute;
+  top: 0;
+  right: 1.5%;
+  z-index: 2;
+}
+
+p {
+  font-size: 1em;
+  color: #070707;
+}
+
+/* green = color: #3D9A39; */
+
+/* .white-paragraph p {
+  padding: 115px 134px;
+  background-color: #fff;
+} */
+
+.white-paragraph {
+  background-color: #fff;
+  padding: 115px 134px;
+}
+
+.flexbox {
+  margin: 10% auto;
+}
+
+p {
+  margin-bottom:1em;
+}
+
+
+.red {
+  color: #EA3F3F;
+}
+
+.gold {
+  color: #F5BD3F;
+}
+
+.green {
+  color: #3D9A39;
+}
+
+.purple {
+  color: #8939D9;
+}
+
+.froggie {
+  font-style: italic;
+}
+
+.dis-blo {
+  display: block;
+}
+
+#download-button {
+      display: block;
+      padding: 1.25em;
+      border-radius: .5em;
+      /*  Centers the content on the X axes with 0 margin on top and 1.25em margin on the bottom  */
+      /*    margin: 0 auto 1.25em;*/
+      text-align: center;
+      /*  20/16 = 1.25em  */
+      margin-bottom: 1.25em;
+      margin-top: 1.25em;
+      box-shadow: 0 .25em .5em 0 rgb(0, 0, 0, 0.2);
+      /*  1/16 = .0625em  */
+      border: #3D9A39 .0625em solid;
+      color:#3D9A39;
+}
+
+#download-button:hover {
+  color:#fff;
+  background-color:#276625;
+  border: #276625;
+}
+
+.flexbox img {
+  display:block;
+}
+
+
+.flexbox-frogs-2 {
+  display: flex;
+}
+
+.flexbox-frogs-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* The Froggies & Lily Pads */
+
+#green-froggie {
+}
+
+#rel-lily-pad {
+
+}
+
+#gold-froggie {
+  position: absolute;
+  top: 30.5%;
+  left: 17%;
+}
+
+
+#red-froggie {
+  position: absolute;
+  top: 2739px;
+  right: 0;
+  z-index: 30;
+  display: block;
+  margin-bottom: 6px;
+}

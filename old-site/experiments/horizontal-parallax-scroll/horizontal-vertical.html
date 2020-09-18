@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vertical Scroll but Horizontal Parallax</title>
+  <link rel="stylesheet" href="css/hor-vert-styles.css">
+</head>
+
+<body>
+
+  <section class="section s1" data-stage1="">
+  </section>
+
+  <section class="section s2" data-stage2="">
+    <div class="circle rellax" id="bird" data-rellax-speed="4"></div>
+  </section>
+
+  <section class="section s3" data-stage3="">
+  </section>
+
+  <section class="section s4" data-stage4="">
+  </section>
+
+  <section class="section s5" data-stage5="">
+  </section>
+
+<!-- script section below -->
+  <script type="text/javascript" src="js/rellax.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      center: true,
+      vertical: false,
+      horizontal: true
+    });
+  </script>
+</body>
+
+</html>
