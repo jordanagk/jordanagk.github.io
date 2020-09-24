@@ -101,3 +101,11 @@ footer {
   /* 35% of #container width = 358.2px */
   width: 358px;
 }
+
+#letter-analysis {
+  opacity: 0;
+}
+
+#letter-analysis.visible {
+  opacity: 1;
+}
