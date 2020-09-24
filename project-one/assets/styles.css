@@ -73,13 +73,12 @@ a {
   display: flex;
 }
 
-
 .history-writeup {
   margin-top: 50px;
 }
 
 .history-writeup p {
-  font-size:20px;
+  font-size: 20px;
 }
 
 footer {
@@ -89,13 +88,13 @@ footer {
 #my-photo {
   width: 200px;
   height: 200px;
-  margin-right:60px;
+  margin-right: 60px;
 }
 
 .personal-title {
   /* 29% x 1024px = 300px */
   width: 300px;
-  margin-right:60px;
+  margin-right: 60px;
 }
 
 .sources {
