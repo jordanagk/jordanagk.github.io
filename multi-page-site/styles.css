@@ -14,10 +14,18 @@ nav.interior-nav a {
   padding: 20px 0px;
   text-decoration: none;
   text-align: center;
+  font-family: fantasy;
 }
 
 nav.interior-nav a {
   width: 15%;
+}
+
+#gryffindor.active,
+#ravenclaw.active,
+#slytherin.active,
+#hufflepuff.active {
+  background-color: #fff;
 }
 
 #gryffindor {
