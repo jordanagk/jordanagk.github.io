@@ -1,0 +1,170 @@
+/* Style Sheet for content-added.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding:30px;
+}
+
+section {
+  margin-bottom:300px;
+}
+
+.row {
+  display: flex;
+}
+
+/* .row div {
+  height:200px;
+} */
+
+img {
+  width:100%;
+}
+
+/* COLORS */
+
+.eighth_column {
+  background:#ccfed9;
+  border: 2.5px solid #000000;
+}
+
+.quarter_column {
+  background:#feccde;
+  border: 2.5px solid #000000;
+}
+
+.extra.quarter_column {
+  background:#ccfdfe;
+  border: 2.5px solid #000000;
+}
+
+.three-eighths_column {
+  background: #feedcc;
+  border: 2.5px solid #000000;
+}
+
+
+/* Static Section */
+.static {
+  width:1792px;
+  margin: 0 auto 300px auto;
+}
+
+.static .eighth_column {
+  width:224px;
+}
+
+.static .quarter_column {
+  width:448px;
+}
+
+.static .three-eighths_column {
+  width:672px;
+}
+
+/* Hybrid Section */
+.hybrid {
+  width:1024px;
+  margin: 0 auto 300px auto;
+}
+
+.hybrid .eighth_column {
+  width:12.5%;
+}
+
+.hybrid .quarter_column {
+  width:25%;
+}
+
+.hybrid .three-eighths_column {
+  width:37.5%;
+}
+
+.hybrid .eighth_column,
+.hybrid .quarter_column,
+.hybrid .three-eighths_column {
+  padding:20px;
+}
+
+
+/* Responsive Section */
+.responsive {
+}
+
+.responsive .eighth_column,
+.responsive .quarter_column,
+.responsive .three-eighths_column {
+  padding:20px;
+  /* background-color:#00000000; */
+  border: 0px;
+}
+
+.responsive .eighth_column {
+  width:12.5vw;
+  background-image: url("baseball-bitmap_1.jpg");
+  background-repeat: no-repeat;
+  /* background-size:contain; */
+  background-position:center;
+
+}
+
+.responsive .quarter_column {
+  width:25vw;
+}
+
+.responsive .three-eighths_column {
+  width:37.5vw;
+}
+
+.responsive .extra.quarter_column.one {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Heyward_lines_into_double_play_%2828356212176%29.jpg/2880px-Heyward_lines_into_double_play_%2828356212176%29.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-image: url("miggy-bitmap_1.jpg");
+}
+
+
+
+
+
+
+/* ******************** NOTES BELOW *******************
+
+************Different Units & their Breakdowns
+Static screen width = 1792px
+1/8 = eighth_column width = 224px
+1/4 = quarter_column width = 448px
+3/8 = three-eighths_column width = 672px
+
+
+Responsive Screen width = 100vw
+1/8 = eighth_column width = 12.5vw
+1/4 = quarter_column width = 25vw
+3/8 = three-eighths_column width = 37.5vw
+
+
+Static + Responsive
+width of parent object = 1024px
+1/8 = eighth_column width = 12.5%
+1/4 = quarter_column width = 25%
+3/8 = three-eighths_column width = 37.5%
+
+
+
+************Colors
+
+light-red – #feccde
+light-orange — #feedcc
+light-green – #ccfed9
+light-blue – #ccfdfe
+
+*/
