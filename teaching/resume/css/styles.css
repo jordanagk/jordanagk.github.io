@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #2E4F9C;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row-reverse;
+}
+
+
+/**************************************************
+ ************ HEADER section ******************* */
+header {
+  background-color: #E9EDF5;
+  text-align: center;
+  padding: 1.5em;
+  margin-bottom: 5em;
+}
+
+header img {
+  height: 9.735em;
+  margin: 1.56em 0em 1.875em;
+}
+
+img#blue-image {
+  display: inline;
+}
+
+img#orange-image {
+  display:none;
+}
+
+header h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+header h2 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+header a {
+  display: block;
+  text-decoration: none;
+  color: #2E4F9C;
+}
+
+header a:nth-child(1) {
+  margin-top: 1rem;
+}
+
+/**************************************************
+ ************ MAIN section ******************* */
+#left-column h1,
+#career-summary h1,
+#right-column h1 {
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+  padding-bottom: .5em;
+  border-bottom: .0625em solid #ff9100;
+}
+
+#career-summary h1 {
+  margin-top: 0;
+}
+
+/* Left & Right Columns */
+.education-block h2 {
+  font-size: 1rem;
+}
+
+.job-container.jc-space {
+  margin-bottom: 4.25em;
+}
+
+.flex h3 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.flex h4,
+.education-block h3,
+.education-block h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.education-block h4 {
+  color: #2E4F9C50;
+  margin-bottom: 1.25em;
+}
+
+.flex h5 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #2E4F9C50;
+}
+
+.flex {
+  margin-bottom: 2.5em;
+}
+
+hr {
+  color: #ff9100;
+}
+
+.container {
+  padding: 1.5em;
+}
+
+/* Fonts */
+.serif {
+  font-family: 'Lora', serif;
+}
+
+.sans-serif {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* *************************************************************************** MEDIA Queries ************************* */
+@media only screen and (min-width:500px) and (max-width:959px) {
+
+}
+
+@media only screen and (min-width:960px) {
+body {
+  color:#ff9100;
+}
+
+  .web-container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    padding: 0;
+    margin-bottom: 2.5em;
+    background-color: #ff910010;
+  }
+
+  header a {
+    display:inline;
+  }
+
+  header a:first-of-type {
+    margin-right: 2em;
+  }
+
+  header img {
+    height: 11.25em;
+    margin: 0;
+    padding: 0;
+  }
+
+  img#orange-image {
+    display: inline;
+  }
+
+  img#blue-image {
+    display: none;
+  }
+
+  header a {
+    color:#ff9100;
+  }
+
+.education-block h4,
+.flex h5 {
+  color:#ff910050;
+}
+
+  .contact-container {
+    text-align: left;
+    margin-left: 1.25em;
+    position: relative;
+  }
+
+  .name {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .job-container .flex {
+    justify-content: space-between;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    flex-flow:row;
+  }
+
+  #left-column {
+    width: 70%;
+  }
+
+  #right-column {
+    width: 25%;
+  }
+}

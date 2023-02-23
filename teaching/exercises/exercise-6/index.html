@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 6: Sad Froggie / Happy Froggie</title>
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/your-answers.css">
+  <!-- We need this jquery library code in order for our toggle.js to work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- toggle.js MUST come after the Google API otherwise it will not work. The browser window can't read toggle.js without loading the Google API first. -->
+  <script src="assets/toggle.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Exercise 6: Sad Froggie / Happy Froggie<br>
+      <span>The Toggle.js Story</span>
+    </h1>
+    <p class="white-paragraph intro section">In this exercise we will be adding the jquery library, toggle.js template, and modifying the template so a user can change Froggie's mood by clicking on a button.</p>
+    <div class="flexbox">
+      <div class="froggie-container">
+        <img id="sad_froggie" src="assets/sad_froggie.svg" alt="Vector illustration of a sad Green Froggie">
+        <img id="happy_froggie" src="assets/happy_froggie.svg" alt="Vector illustration of a happy Green Froggie">
+      </div>
+      <button id="toggle_button" type="button" name="button">Change Froggie's Mood</button>
+    </div>
+  </div>
+</body>
+
+</html>

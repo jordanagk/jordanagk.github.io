@@ -1,0 +1,90 @@
+nav {
+  width: 80vw;
+  padding: 0 10vw;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a,
+nav.interior-nav a {
+  font-family: Georgia, serif;
+  width: 20%;
+  font-size: 16px;
+  padding: 20px 0px;
+  text-decoration: none;
+  text-align: center;
+  font-family: fantasy;
+}
+
+nav.interior-nav a {
+  width: 15%;
+}
+
+#gryffindor.active,
+#ravenclaw.active,
+#slytherin.active,
+#hufflepuff.active {
+  background-color: #fff;
+}
+
+#gryffindor {
+  color: #650000;
+  background: #e9bd5c;
+}
+
+#gryffindor:hover {
+  color: #e9bd5c;
+  background: #650000;
+}
+
+#slytherin {
+  color: #2f751b;
+  background: #cbcccb;
+}
+
+#slytherin:hover {
+  background: #2f751b;
+  color: #cbcccb;
+}
+
+#ravenclaw {
+  color: #193957;
+  background: #da9760;
+}
+
+#ravenclaw:hover {
+  background: #193957;
+  color: #da9760;
+}
+
+#hufflepuff {
+  color: #1f1e18;
+  background: #bdb68d;
+}
+
+#hufflepuff:hover {
+  background: #1f1e18;
+  color: #bdb68d;
+}
+
+/* COLORS */
+/* #gryffindor {
+  color:#650000;
+  background: #e09c08;
+}
+
+#slytherin {
+  color:#2f751b;
+  background: #cbcccb;
+}
+
+#ravenclaw {
+  color:#193957;
+  background: #8e501d;
+}
+
+#hufflepuff {
+  color:#1f1e18;
+  background: #ff9d0b;
+} */

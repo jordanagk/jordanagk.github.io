@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 42.5vw;
+  height: 20vw;
+  margin-bottom:2.5vw;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight:400;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  text-align: center;
+  background-color:#000;
+  color:#fff;
+  padding: 2.5vw;
+  margin-bottom:2.5vw;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 42.5vw;
+  height: 20vw;
+  margin-bottom:2.5vw;
+}
+
+.square {
+  height: 100%;
+  width: 20vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.left {
+  background-image: url('../assets/duotone-loon-1.jpg');
+  background-color: #b7f7c4;
+}
+
+.right {
+  background-image: url('../assets/duotone-loon-2.jpg');
+  background-color: #e38864;
+}
