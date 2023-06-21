@@ -1,0 +1,4 @@
+<svg id="map-marker-1" xmlns="http://www.w3.org/2000/svg" width="12" height="14.704" viewBox="0 0 12 14.704">
+  <path id="path_1" data-name="Path 1" d="M10.909,9.332A5.708,5.708,0,0,0,12,6,6,6,0,0,0,0,6,5.85,5.85,0,0,0,1.358,9.761c.812.977,1.766,1.839,2.618,2.782C4.634,13.272,5.328,13.982,6,14.7l1.991-2.139a30.283,30.283,0,0,0,2.918-3.233" fill="#472426"/>
+  <circle id="ellipse_1" data-name="Ellipse 1" cx="3" cy="3" r="3" transform="translate(3 3.027)" fill="#fff"/>
+</svg>

@@ -4,7 +4,7 @@
  Author: LTBX
  Author URI: https://www.ltbx.co/
  Description: Theme for the MHS Association & MHS Consulting.  Designed by LTBX and based on <code>_s</code>.
- Version: 1.0.0
+ Version: 0.1.1
  Tested up to: 7.4
  Requires PHP: 7.4
  License: GNU General Public License v2 or later
@@ -491,9 +491,11 @@ html {
     --ripple-blue: #8BD3E6;
     /* TINTS */
     --fb-tint: #EBE8E9;
+    --fb-m-tint: #C5BCBD;
     --sy-tint: #FDF4D8;
     --rb-tint: #EBF6F9;
     --rb2-tint: #CCE8F1;
+    --transparent: #00000000;
 }
 
 
@@ -658,9 +660,9 @@ iframe.full-col {
 }
 
 @media only screen and (min-width: 900px) {
-iframe.full-col {
-    height: 32vw;
-}
+    iframe.full-col {
+        height: 32vw;
+    }
 }
 
 img {
@@ -705,10 +707,13 @@ a:active {
     outline: 0;
 }
 
-.image-link,
-.image-link:hover,
+a.image-link,
+a.image-link:hover,
 a.panel,
-a.panel:hover {
+a.panel:hover,
+a.image-link:visited,
+a.image-link:focus,
+a.image-link:active {
     border: none;
 }
 
@@ -737,7 +742,16 @@ svg:hover #Group_84 path {
     border: none;
 }
 
-/* ^^^^^^^^BUTTONS */
+/** SOCIAL ICONS */
+#linked-in #Path_2520 {
+    color: var(--white);
+}
+
+#linked-in:hover #Path_2520 {
+    color: var(--splendor-yellow);
+}
+
+/* ^^^^^^^^ BUTTONS */
 a.button {
     font-size: .833rem;
     text-align: center;
@@ -748,6 +762,10 @@ a.button {
     margin: 30px 0 0;
     display: inline-block;
     border: none;
+}
+
+a.button.registration {
+    margin-bottom: 30px;
 }
 
 a.button:hover {
@@ -776,6 +794,14 @@ a.learn-more {
     /* justify-content: space-between; */
     gap: 30px;
     align-items: center;
+}
+
+.dual-button.grants p {
+    margin-bottom: 0;
+}
+
+.dual-button.grants {
+    margin-bottom: 36px;
 }
 
 .section-ghost h2 {
@@ -1012,7 +1038,7 @@ textarea {
 
 .left-color-background.white,
 .right-color-background.white {
-    margin:60px 0;
+    margin: 60px 0;
 }
 
 #hero-container img {
@@ -1111,8 +1137,8 @@ textarea {
 
     .left-color-background.white,
     .right-color-background.white {
-        margin-top:120px;
-        margin-bottom:0;
+        margin-top: 120px;
+        margin-bottom: 0;
     }
 
     #hc-text {
@@ -1219,7 +1245,7 @@ p.highlight-text {
 }
 
 .horizontal-card.consulting-card {
-    margin-top:60px;
+    margin-top: 60px;
 }
 
 .upcoming-events .three-col,
@@ -1433,6 +1459,19 @@ a.event-image {
 #grants-hero .main-container {
     margin-top: 0;
     padding-top: 75px;
+
+}
+
+
+#grants-hero #assembly-scholarship-hero {
+    margin: 0 30px;
+    padding: 75px 0;
+}
+
+@media only screen and (min-width:768px) {
+    #grants-hero #assembly-scholarship-hero {
+        margin: 0 auto;
+    }
 }
 
 #grants-hero .main-container h2 {
@@ -1478,6 +1517,21 @@ p.grant-deadline {
     overflow: hidden; */
 }
 
+.image-hero img {
+    border-radius: 30px;
+}
+
+.main-container.grant-recipients>.row.two-col {
+    border-bottom: solid 1px var(--black);
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+}
+
+.main-container.grant-recipients>.row.two-col:last-of-type,
+.main-container.grant-recipients>.row.two-col {
+    border: none;
+}
+
 /* Individual Event Pages*/
 
 .event-page-info {
@@ -1485,14 +1539,71 @@ p.grant-deadline {
     flex-direction: column;
 }
 
-.event-page-info .event-times {
+/* .event-page-info .event-times */
+
+.event-page-info p {
     font: 400 1rem Arboria, sans-serif;
     margin-top: 0;
     margin-bottom: 0;
 }
 
+.left-col.event-info h3 {
+    font-family: 'Arboria', sans-serif;
+    /* 24px = 1.333rem */
+    font-size: 1.333rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 51px;
+}
+
+.left-col.event-info h4 {
+    font: 600 0.8rem/0.8rem Arboria, sans-serif;
+    letter-spacing: 0;
+    color: var(--fb-m-tint);
+    text-transform: uppercase;
+    margin: 0;
+}
+
 .event-page-info a.button {
     order: 3;
+}
+
+.main-container.sponsors .row.three-col {
+    align-items: start;
+    row-gap: 30px;
+}
+
+.main-container.sponsors .row.three-col img {
+    max-width: 70%;
+    margin-top: 30px;
+}
+
+#mhsc_sponsor {
+    width: 57%;
+}
+
+#apg_sponsor {
+    width: 49%;
+}
+
+
+
+@media only screen and (min-width:768px) {
+    .main-container.sponsors .row.three-col img {
+        margin: unset;
+    }
+
+    #mhsa_sponsor {
+        width: 33%;
+    }
+
+    #mhsc_sponsor {
+        width: 24%;
+    }
+
+    #apg_sponsor {
+        width: 22%;
+    }
 }
 
 .individual-presenter>p {
@@ -1534,9 +1645,34 @@ p.grant-deadline {
 }
 
 .photo-gallery .row.three-col>img {
-    width:100%;
-    border-radius:15px;
+    width: 100%;
+    border-radius: 15px;
 }
+
+#network-group-listings .wrapper-profiles {
+    grid-auto-rows: unset;
+    grid-template-columns: unset;
+    row-gap: 0;
+}
+
+@media only screen and (min-width:900px) {
+    #network-group-listings .wrapper-profiles {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+#network-group-listings .wrapper-profiles>div span:nth-of-type(1) {
+    font-weight: 400;
+}
+
+#network-group-listings h2 {
+    border-top: 2px solid var(--fb-tint);
+    padding-top: 60px;
+    font-size: 1.333rem;
+    font-weight: 500;
+}
+
+
 
 
 
@@ -1554,6 +1690,11 @@ p.grant-deadline {
 
 .photo-expand {
     position: relative;
+}
+
+.photo-expand img.attachment-Profile,
+.individual-board img {
+    border-radius: 15px;
 }
 
 .photo-expand .expand-icon {
@@ -1709,45 +1850,115 @@ p.grant-deadline {
     width: 100%;
 }
 
-/************** Benefits of Membership Page  */
+/************** Membership Benefits Page  */
 
 #benefits-of-membership .left-color-background.yellow,
 #benefits-of-membership .left-color-background.blue {
-    padding-bottom:0;
+    padding-bottom: 0;
 }
-
-/* #benefits-of-membership .right-color-background.white {
-    padding-bottom:60px;
-} */
 
 #benefits-of-membership .right-color-background.white .row.two-col {
     margin-bottom: 0;
 }
 
 #benefits-of-membership .left-color-background .reverse .left-col {
-    order:2;
+    order: 2;
 }
 
 #benefits-of-membership .left-color-background .reverse .right-col {
-    order:1;
+    order: 1;
 }
-
-/* #benefits-of-membership .call-out-headers {
-    margin-top:30px;
-}
-
-.row.two-col.reverse {
-    padding-bottom: 60px;
-} */
 
 .call-out-headers {
-    margin-top:30px;
+    margin-top: 30px;
 }
 
-/* provides the proper spacing between color and white backgrounds on mobile. */
-/* .row.two-col {
-    padding-bottom: 60px;
-} */
+/******************** Jobs Board ***************/
+.wrapper-jobs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2.33rem;
+}
+
+.job-posting {
+    width: 100%;
+    border-radius: 15px;
+    background-color: var(--fb-tint);
+    padding: 45px;
+}
+
+.job-posting.mhs-consulting {
+    border-top: 12px solid var(--flourish-green);
+}
+
+.job-posting header,
+.job-posting .corporation,
+.job-posting .secondary span,
+.contact-info span {
+    font-family: 'arboria', sans-serif;
+}
+
+.job-posting header {
+    text-transform: uppercase;
+    font-size: 1.333rem;
+    font-weight: 500;
+    line-height: 1.8333rem;
+    margin-bottom: .5rem;
+}
+
+.job-posting .corporation {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.job-posting .secondary {
+    margin-bottom: .8333rem;
+}
+
+.job-posting .secondary:nth-of-type(3) {
+    margin-bottom: 1.6667rem;
+}
+
+.job-posting .secondary span,
+.contact-info span {
+    font-size: 0.66667rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (min-width:900px) {
+    .wrapper-jobs {
+        flex-direction: row;
+        justify-content: revert;
+    }
+
+    .job-posting {
+        max-height: 500px;
+        width: 30%;
+    }
+}
+
+/* Individual Job Post */
+.contact-info span {
+    display: block;
+}
+
+.contact-info {
+    margin-bottom: 0;
+}
+
+h4.corporation {
+    margin-top: 0;
+    font-family: 'arboria';
+    font-weight: 400;
+    font-size: 1.333rem;
+}
+
+#individual-job #grants-hero h2 {
+    margin-bottom: .5rem;
+}
 
 
 @media only screen and (min-width: 900px) {
@@ -1760,7 +1971,7 @@ p.grant-deadline {
     }
 
     .row {
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .before-footer>.row {
@@ -1816,7 +2027,7 @@ p.grant-deadline {
 
     .full-pull-quote {
         padding: 75px;
-        margin-bottom:60px;
+        margin-bottom: 60px;
     }
 
     .full-pull-quote .quote {
@@ -1937,6 +2148,11 @@ p.grant-deadline {
         top: -210px;
     } */
 
+    /* Individual Job Page */
+    #individual-job #grants-hero .right-col img {
+        top: 80px;
+    }
+
     /* Individual Event Page */
     .event-page-info a.button {
         margin-top: 0;
@@ -1980,7 +2196,7 @@ p.grant-deadline {
     }
 
     .photo-gallery .row.three-col>img {
-        width:30%;
+        width: 30%;
     }
 
     /* Staff & Board Page */
@@ -1999,15 +2215,15 @@ p.grant-deadline {
 
     /* Benefits of Membership */
     #benefits-of-membership .left-color-background .reverse .left-col {
-        order:1;
+        order: 1;
     }
-    
+
     #benefits-of-membership .left-color-background .reverse .right-col {
-        order:2;
+        order: 2;
     }
 
     #benefits-of-membership .call-out-headers {
-        margin-top:0;
+        margin-top: 0;
     }
 
     /* .row.two-col.zero {
@@ -2027,7 +2243,73 @@ p.grant-deadline {
 /* Footer */
 footer {
     background-color: var(--formation-brown);
-    height: 15vw;
+    /*     height: 15vw; */
+    color: var(--white);
+    font-family: arboria, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 48px;
+    margin-top: 60px;
+}
+
+#footer-logo {
+    width: 70%;
+    margin-bottom: 48px;
+}
+
+.footer-panel.address {
+    margin-bottom: 15px;
+}
+
+.footer-panel.address span {
+    display: block;
+}
+
+.footer-panel.email {
+    margin: 21px 0;
+    display: inline-block;
+    color: var(--white);
+}
+
+/* on pages that have a color background next to the footer we need to apply the following to negate the color background bottom margin */
+.right-color-background.bottom {
+    margin-bottom: -60px;
+}
+
+
+@media only screen and (min-width:768px) {
+    #main-footer .footer-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1088px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #footer-logo {
+        margin-bottom: 0;
+    }
+
+    .footer-panel.address {
+        margin-bottom: 0;
+    }
+
+    .footer-panel.email {
+        margin: 0;
+        display: unset;
+    }
+
+    .footer-panel.address span {
+        display: unset;
+    }
+
+    .footer-wrapper.copyright {
+        padding-top: 30px;
+        margin-top: 60px;
+        font-size: .8333rem;
+    }
 }
 
 @media only screen and (min-width:1000px) {
@@ -2037,6 +2319,126 @@ footer {
 
 }
 
+/*********************** The Events Calendar  */
+.tribe-filter-bar .tribe-filter-bar-c-filter__toggle {
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.tribe-common button {
+    text-align: center;
+    font-size: .888rem;
+    background: var(--white);
+    color: var(--credence-blue);
+    padding: 15px 21px;
+    border-radius: 12px;
+    margin: 30px 0 0;
+    display: inline-block;
+    border: 1.5px solid var(--ripple-blue)
+}
+
+.tribe-common button:hover {
+    border-color: var(--credence-blue);
+    color: var(--white);
+    background: var(--credence-blue);
+}
+
+.tribe-common .tribe-events-c-top-bar__nav-list-item button {
+    border: none;
+    padding: 6px;
+    background-color: none;
+}
+
+.tribe-common .tribe-events-c-top-bar__nav-list-item button:hover {
+    color: none;
+    background: none;
+}
+
+.tribe-common a.tribe-common-c-btn-icon--caret-left:hover,
+.tribe-common a.tribe-common-c-btn-icon--caret-righ:hover {
+    border: none;
+    color: var(--ripple-blue);
+}
+
+.tribe-common button.tribe-filter-bar__selected-filters-clear-button,
+.tribe-common button.tribe-common-c-btn-icon--caret-right,
+.tribe-common button.tribe-common-c-btn-icon--caret-left,
+.tribe-common button.tribe-events-c-top-bar__datepicker-button {
+    margin-top: 0;
+}
+
+.tribe-filter-bar .tribe-filter-bar-c-dropdown.tribe-filter-bar-c-dropdown--has-selection .selection {
+    margin-bottom: 15px;
+}
+
+.select2-container--default .select2-results__option--highlighted[data-selected] {
+    background-color: var(--fb-tint);
+}
+
+.select2-results__option,
+.select2-container--default .select2-selection--single {
+    font-size: .8333rem;
+}
+
+.select2-container--default .select2-selection--single {
+    background: var(--white);
+    border: solid 1px var(--formation-brown);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-radius: 6px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    display: none;
+}
+
+.tribe-filter-bar .tribe-filter-bar-c-dropdown .select2-selection__clear {
+    padding: 0;
+}
+
+.tribe-filter-bar .tribe-filter-bar-c-pill--has-selections .tribe-filter-bar-c-pill__remove-button {
+    display: block;
+    line-height: 0;
+    padding: 4px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    transform: translateY(-80%);
+}
+
+
+/* Top Bar Caret Buttons */
+.tribe-events .tribe-events-c-top-bar__nav-list {
+    align-items: center;
+}
+
+.tribe-common button[disabled] {
+    color: var(--fb-m-tint);
+    border-color: transparent;
+}
+
+.tribe-common button[disabled]:hover {
+    color: var(--fb-m-tint);
+    background: none;
+}
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -2045,16 +2447,6 @@ footer {
 --------------------------------------------- */
 #nav-bar {
     background-color: var(--formation-brown);
-    color: #fff;
-    font-family: arboria, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    height: 50px;
-}
-
-#nav-bar a {
-    color: #fff;
-    border: none;
 }
 
 #secondary-options {
@@ -2084,14 +2476,6 @@ footer {
 
     #nav-logo {
         margin-bottom: 36px;
-    }
-
-    #nav-bar div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10%;
-        height: 100%;
     }
 }
 
@@ -2145,6 +2529,120 @@ footer {
     text-decoration: none;
 }
 
+/************* MAX MEGA MENU */
+
+header#navigation {
+    position: relative;
+    z-index: 9999;
+}
+
+/* Makes submenus utilize Arboria instead of Proforma.
+ * item-20 = Grants & Scholarships *
+ * item-120 = Events Calendar *
+ * item-148 = Value of Your Membership *
+ * item-174 = Benefits of Your Membership */
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item li.mega-menu-item>a.mega-menu-link,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item.mega-disable-link>a.mega-menu-link,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-20>a.mega-menu-link,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-120>a.mega-menu-link,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-148>a.mega-menu-link,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-174>a.mega-menu-link {
+    font-family: 'arboria', sans-serif;
+}
+
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item.mega-disable-link>a.mega-menu-link,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-120>a.mega-menu-link,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-20>a.mega-menu-link {
+    text-transform: uppercase;
+    color: var(--fb-m-tint);
+    font-size: .8333rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-120>a.mega-menu-link,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-20>a.mega-menu-link {
+    color: var(--white);
+}
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-120>a.mega-menu-link:hover,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li#mega-menu-item-20>a.mega-menu-link:hover {
+    color: var(--splendor-yellow);
+}
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link {
+    padding-left: 20px;
+}
+
+#mega-menu-item-144 a.mega-menu-link>span,
+#mega-menu-item-145 a.mega-menu-link>span {
+    display: block;
+    margin-top: -10px;
+}
+
+
+
+#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li#mega-menu-item-781>ul.mega-sub-menu {
+    margin-left: 51px;
+}
+
+#nav-logo {
+    display: none;
+}
+
+#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 a.mega-menu-logo {
+    border-bottom: none;
+}
+
+@media only screen and (min-width:769px) {
+    #nav-logo {
+        display: block;
+    }
+}
+
+
+
+/* Social Media Icons */
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1 li#mega-menu-item-117 ul.mega-sub-menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+}
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1 li#mega-menu-item-117 ul.mega-sub-menu svg {
+    width: 24px;
+    fill: var(--white);
+}
+
+@media only screen and (min-width:768px) {
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 li#mega-menu-item-117 ul.mega-sub-menu svg {
+        width: 33px;
+    }
+}
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1 li#mega-menu-item-117 ul.mega-sub-menu svg:hover {
+    fill: var(--splendor-yellow);
+}
+
+#secondary-options {
+    display: none;
+}
+
+@media only screen and (min-width:900px) {
+    #secondary-options {
+        margin-top: 1.5vw;
+        margin-bottom: 39px;
+        justify-content: flex-end;
+        display: flex;
+        align-content: baseline;
+        column-gap: 1.667rem;
+    }
+}
+
+
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -2187,27 +2685,16 @@ footer {
     flex: 1 0 50%;
 }
 
-@media only screen and (min-width:900px) {
-    #secondary-options {
-        margin-top: 1.5vw;
-        margin-bottom: 39px;
-        justify-content: flex-end;
-        display: flex;
-        align-content: baseline;
-        column-gap: 1.667rem;
-    }
-}
-
 section.main-container.page-number {
     margin-top: 33px;
 }
 
-section.main-container.page-number a {
+section.main-container.page-number a.page-numbers {
     margin: 0 9px;
     border: none;
 }
 
-section.main-container.page-number a:hover {
+section.main-container.page-number a.page-numbers:hover {
     color: var(--splendor-yellow);
     text-decoration: underline;
     border: none;
@@ -2425,3 +2912,128 @@ section.main-container.page-number a:hover {
     margin-right: auto;
     margin-bottom: 1.5em;
 }
+
+
+
+
+
+/********** Download Resource Module */
+.resource {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    gap: 20px;
+}
+
+.resource svg {
+    width:63px;
+}
+
+.resource div .event-sub {
+    font-size: 0.66667rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:0;
+}
+
+.resource div header {
+    font-family: 'arboria', sans-serif;
+    font-size: 1rem;
+}
+
+.resource div .download-text {
+    font-size: 0.8333rem;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'arboria', sans-serif;
+    font-weight: 500;
+    color: var(--black);
+    border-bottom: solid 2px var(--splendor-yellow);
+    padding-bottom: 0px;
+    margin:0;
+    margin-top:6px;
+}
+
+
+/* ************** LTBX Custom Events Build ********************/
+.wrapper-stories {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    /* grid-template-rows: minmax(265px,auto); */
+    /* grid-auto-rows: minmax(265px,auto); */
+    grid-gap: 60px;
+}
+
+.wrapper-stories a.panel, 
+.stories.row .three-col a.panel {
+    border-radius: 15px;
+    background-color: var(--fb-tint);
+}
+
+.wrapper-stories a.panel:hover, 
+.stories.row .three-col a.panel:hover {
+    background-color: var(--sy-tint);
+}
+
+a.panel header, 
+a.panel p {
+    width: fit-content;
+    border-bottom: solid 2px var(--transparent);
+}
+
+a.panel .date-image .date h6,
+a.panel .date-image .date h4 {
+    font-family: 'Arboria', sans-serif;
+}
+
+
+a.panel:hover .date-image .date h6,
+a.panel:hover .date-image .date h4 {
+    color:var(--splendor-yellow);
+}
+
+a.panel:hover header, 
+a.panel:hover p {
+    border-bottom-color: var(--splendor-yellow);
+}
+
+.wrapper-stories a.panel {
+    position: relative;
+}
+
+.main-container.page-number {
+    display: flex;
+    position: relative;
+}
+
+section.main-container.page-number a.learn-more {
+    position:absolute;
+    right:0;
+}
+
+section.main-container.page-number {
+    margin-top: 33px;
+}
+
+section.main-container.page-number a.page-numbers {
+    margin: 0 9px;
+    border: none;
+}
+
+section.main-container.page-number a.page-numbers:hover {
+    color: var(--splendor-yellow);
+    text-decoration: underline;
+    border: none;
+}
+
+
+
+/* .panel img {
+    border-radius: 15px 15px 0 0;
+    margin: 0;
+}
+
+.panel .card {
+    padding: 33px;
+} */
