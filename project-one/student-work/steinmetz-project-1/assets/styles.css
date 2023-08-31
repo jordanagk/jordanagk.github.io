@@ -1,0 +1,147 @@
+/* Our main stylesheet for Project one */
+
+
+body {
+  background-color: #E1B96F;
+}
+
+#container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1024px;
+  height: 768px;
+}
+
+h1 {
+  font-family: adobe-caslon-Pro;
+  font-weight:400;
+  font-style: Semibold;
+  font-size: 350px;
+  margin-top: -50px;
+  margin-bottom: -150px;
+}
+h2 {
+  font-family: adobe-caslon-Pro;
+  font-weight: 400;
+  font-size: 48px;
+  font-style:italic;
+}
+h3 {
+  font-family: adobe-caslon-pro;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: italic;
+}
+
+#button {
+  font-family: adobe-caslon-Pro;
+  font-size: 18px;
+  font-style: normal;
+  color: #000000;
+  opacity: 100%;
+  height: 70px;
+  margin-left: 50px;
+  margin-bottom: 90px;
+}
+
+.letter-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.character-highlights {
+  font-size: 30px;
+  font-family: adobe caslon Pro;
+  color: #000000;
+  margin: 0 auto;
+  width: 39%;
+}
+
+.flexybox {
+  width:
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-left: -150px;
+  margin-right: -150px;
+  padding-top: 200px;
+}
+
+#jackson-image {
+  margin-right: 200px;
+}
+
+.personal-title {
+  width: 571px;
+
+
+}
+
+.sources {
+  width: 800px;
+  align-items: center;
+}
+
+#letter-analysis {
+  position: absolute;
+  top: 44px;
+  left: 343px;
+  opacity: 0;
+}
+
+#letter-analysis.visible {
+  opacity: 1;
+}
+
+h4 {
+font-family: adobe-caslon-pro;
+font-weight: 400;
+font-size: 18px;
+font-style: normal;
+opacity: 50%;
+}
+p {
+font-family: adobe-caslon-pro;
+font-weight: 400;
+font-size: 30px;
+font-style: normal;
+margin: 0 auto;
+width: 50%;
+}
+
+h6 {
+  font-family: adobe-caslon-pro;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  opacity: 75%;
+}
+
+a {
+color: #000000;
+opacity: 50%;
+text-decoration:underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+  color: #000000;
+}
+
+h2,
+h3,
+h4,
+p {
+  margin: 0 auto;
+  width: 60%;
+}
