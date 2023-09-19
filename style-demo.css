@@ -1,0 +1,31 @@
+.menno-simons { 
+    color:purple;
+    font-size:50px;
+}
+
+em  {
+    color:orange;
+    font-family:cursive;
+}
+
+#home-id {
+    font-size:18px;
+}
+
+/* a {
+    color:brown;
+    font-family:sans-serif;
+    text-transform:uppercase
+} */
+
+/* a:hover {
+    text-transform:lowercase;
+    color:pink;
+    font-family:fantasy;
+} */
+
+a:visited {
+    color:yellowgreen;
+}
+
+
