@@ -7,6 +7,16 @@
 --white:#fff;
 }
 
+.demo-button {
+    display:block;
+    background-color:var(--orange-shade);
+}
+
+#letter-analysis {
+    display:none;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -28,6 +38,16 @@ header {
  /******************************* ******** Letter & Button **********/ 
   .letter-container {
     width: 491px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    /* align-items:baseline; */
+}
+
+.letter-container h1 {
+    font-size:300px;
+    font-weight:700;
+    margin:0;
 }
 
 #button {
@@ -110,6 +130,11 @@ header {
 footer {
     font-family: "acumin-pro-condensed";
     margin-bottom: 25%;
+    display:flex;
+}
+
+footer div {
+    width:33%;
 }
 
 .photo-title {
