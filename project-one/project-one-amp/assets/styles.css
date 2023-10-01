@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.letter-container img {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 99;
+  bottom: 67px;
+  left: 14px;
+  /* animation for visibility */
+  transition: visibility 0s linear 300ms, opacity 0s;
+}
+
+.letter-container img.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+
+.container {
+    width: 491px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    background-color: #000;
+    height: 60px;
+  }
+
+/******************************* ******** Letter & Button **********/
+.letter-container {
+    width: 491px;
+    position: relative;
+}
+
+.letter-container h1 {
+    font-weight: 900;
+    font-size: 500px;
+    margin-left: 31.28px;
+    margin-right: 13.55px;
+    margin-top: -60px;
+    margin-bottom:0px;
+}
+
+#button {
+    width: 51px;
+    height: 51px;
+    background-color: #fd753f;
+    border-radius: 50%;
+    z-index: 9999999999999;
+    position: absolute;
+    top: 209px;
+    left: 301px;
+}
+
+#button:hover {
+    background-color:#87a7d7;
+    cursor:pointer;
+}
+
+/******************************* ******** Sample Set **********/
+.sample-set {
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 20px;
+    padding-bottom: 10px;
+}
+
+.overflow {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    clear: both;
+    /* width: 400px; */
+}
+
+
+/******************************* ******** Scrollbar Styling **********/
+::-webkit-scrollbar {
+    width: 7.5px;
+    height: 7.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fd753f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ba562e;
+}
+
+
+/******************************* ******** Body **********/
+.body {
+    margin-top: 36px;
+    margin-bottom: 52px;
+    /*    text-decoration: line-through;*/
+
+}
+
+h2 {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 6px;
+    color: #fd753f;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+/******************************* ******** Footer **********/
+footer {
+    font-family: "acumin-pro-condensed";
+    display: flex;
+    margin-bottom: 25%;
+}
+
+.photo-title {
+    width: 300px;
+    display:flex;
+}
+
+.photo-title img {
+  height:94px;
+  width:94px;
+}
+
+.title {
+    width: 100px;
+    margin-left:10px;
+  }
+
+.sources {
+    width: 255px;
+    margin-left: 30px;
+}
+
+h3 {
+    font-size: 13.333px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    color: #fd753f;
+  }
+
+.sources h3 {
+    font-size: 10.6667px;
+    line-height: 18.6667px;
+    }
+
+footer p {
+    font-size: 13.333px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.sources p {
+    font-size: 10.6667px;
+    line-height: 18.6667px;
+}
+
+.sources p:first-of-type {
+    margin: 0px 0px 12px 0px;
+}
+
+/* *********************** Links *********************** */
+a {
+    text-decoration: none;
+    color: #87a7d7;
+    text-transform: uppercase;
+}
+
+a:visited {
+    color: #ff9b73;
+}
+
+a:hover {
+    color: #ff9b73;
+  }

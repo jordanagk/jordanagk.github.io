@@ -1,0 +1,50 @@
+.letter-container img {
+  bottom: -6px;
+  left: -17px;
+}
+
+
+.container {
+    width: 715px;
+}
+
+  .top-row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+/******************************* ******** Letter & Button **********/
+.letter-container {
+    width:400px;
+    height:442px;
+    position: relative;
+}
+
+.letter-container h1 {
+    margin-left:0;
+    margin-right:0;
+}
+
+#button {
+    top: 149px;
+    left: 270px;
+}
+
+/******************************* ******** Sample Set **********/
+.letter-set {
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+}
+
+.overflow {
+    width: 60px;
+    height: 360px;
+    margin-top:40px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
